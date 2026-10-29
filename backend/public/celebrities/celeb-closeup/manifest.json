@@ -209,28 +209,28 @@
         "reveal": "/celebrities/celeb-closeup/ajay-devgn/reveal.jpg"
       },
       "source": {
-        "title": "Drishyam Actor Ajay Devgn with suresh sharma.JPG",
-        "pageUrl": "https://commons.wikimedia.org/wiki/File:Drishyam_Actor_Ajay_Devgn_with_suresh_sharma.JPG",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Drishyam_Actor_Ajay_Devgn_with_suresh_sharma.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "artist": "Sureshsharmaptv63",
-        "credit": "Own work",
-        "description": "Drishyam Indian thriller drama film directed by Nishikant Kamat. Actor Ajay Devgn permoting his pinkcity Jaipur.",
-        "date": "2015-07-30",
-        "originalWidth": 1920,
-        "originalHeight": 1080
+        "title": "Ajay Devgn at 'Action Jackson' photoshoot.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Ajay_Devgn_at_%27Action_Jackson%27_photoshoot.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Ajay_Devgn_at_%27Action_Jackson%27_photoshoot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/more/photos/view/stills/parties-and-events/id/2678029",
+        "description": "Ajay Devgn snapped at 'Action Jackson' photoshoot",
+        "date": "2016-04-05",
+        "originalWidth": 360,
+        "originalHeight": 389
       },
       "crop": {
         "face": {
-          "x": 301.31756591796875,
-          "y": 174.98292541503906,
-          "w": 225.98178100585938,
-          "h": 291.2952575683594
+          "x": 136.40005493164062,
+          "y": 66.00257873535156,
+          "w": 105.28851318359375,
+          "h": 152.19058227539062
         },
-        "sourceWidth": 1280,
-        "sourceHeight": 720,
-        "score": 176
+        "sourceWidth": 360,
+        "sourceHeight": 389,
+        "score": 221
       }
     },
     {

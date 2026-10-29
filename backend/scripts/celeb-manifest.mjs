@@ -20,7 +20,7 @@ export const CELEBRITIES = [
   { slug: "aamir-khan", name: "Aamir Khan", page: "Aamir Khan", gender: "m", region: "bollywood", difficulty: "easy" },
   { slug: "amitabh-bachchan", name: "Amitabh Bachchan", page: "Amitabh Bachchan", gender: "m", region: "bollywood", difficulty: "easy" },
   { slug: "akshay-kumar", name: "Akshay Kumar", page: "Akshay Kumar", gender: "m", region: "bollywood", difficulty: "easy" },
-  { slug: "ajay-devgn", name: "Ajay Devgn", page: "Ajay Devgn", gender: "m", region: "bollywood", difficulty: "medium" },
+  { slug: "ajay-devgn", name: "Ajay Devgn", page: "Ajay Devgn", override: "File:Ajay Devgn at 'Action Jackson' photoshoot.jpg", gender: "m", region: "bollywood", difficulty: "medium" },
   { slug: "hrithik-roshan", name: "Hrithik Roshan", page: "Hrithik Roshan", gender: "m", region: "bollywood", difficulty: "easy" },
   { slug: "ranbir-kapoor", name: "Ranbir Kapoor", page: "Ranbir Kapoor", gender: "m", region: "bollywood", difficulty: "easy" },
   { slug: "ranveer-singh", name: "Ranveer Singh", page: "Ranveer Singh", gender: "m", region: "bollywood", difficulty: "easy" },

@@ -15,7 +15,7 @@ copyright and may still apply to a celebrity's likeness.
 | Aamir Khan | Aamir Khan (cropped).jpg | Prime Minister's Office, Government of India | GODL-India | [Commons](https://commons.wikimedia.org/wiki/File:Aamir_Khan_(cropped).jpg) |
 | Amitabh Bachchan | Indian actor Amitabh Bachchan.jpg | File:Amitabh Bacchan and Shrinivas Kulkarni.jpg : Shrinivaskulkarni1388 derivative work: Junior Jump | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Indian_actor_Amitabh_Bachchan.jpg) |
 | Akshay Kumar | Akshay Kumar National Award for Padman (cropped).jpg | Vice President's Secretariat | GODL-India | [Commons](https://commons.wikimedia.org/wiki/File:Akshay_Kumar_National_Award_for_Padman_(cropped).jpg) |
-| Ajay Devgn | Drishyam Actor Ajay Devgn with suresh sharma.JPG | Sureshsharmaptv63 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Drishyam_Actor_Ajay_Devgn_with_suresh_sharma.JPG) |
+| Ajay Devgn | Ajay Devgn at 'Action Jackson' photoshoot.jpg | Bollywood Hungama | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ajay_Devgn_at_%27Action_Jackson%27_photoshoot.jpg) |
 | Hrithik Roshan | Hrithik Roshan snapped at Mehboob studio 02.jpg | Bollywood Hungama | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hrithik_Roshan_snapped_at_Mehboob_studio_02.jpg) |
 | Ranbir Kapoor | Ranbir Kapoor promoting Bombay Velvet.jpg | Bollywood Hungama | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ranbir_Kapoor_promoting_Bombay_Velvet.jpg) |
 | Ranveer Singh | Ranveer Singh in 2023 (1).jpg | Bollywood Hungama | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ranveer_Singh_in_2023_(1).jpg) |

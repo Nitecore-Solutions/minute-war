@@ -258,7 +258,7 @@ function candidateFromImageInfo(page, info, extra = {}) {
 
   if (!info?.url || !width || !height) return null;
   if (!["image/jpeg", "image/png", "image/webp"].includes(mime)) return null;
-  if (originalWidth < 550 || originalHeight < 550) return null;
+  if ((originalWidth < 550 || originalHeight < 550) && !extra.allowSmall) return null;
   if (originalWidth / originalHeight < 0.45 || originalWidth / originalHeight > 2.1) return null;
   if (BAD_TITLE.test(title)) return null;
 
@@ -310,6 +310,28 @@ async function getPageImageCandidate(celeb) {
   const candidate = candidateFromImageInfo(infoPage, info, {
     fromPage: true,
     titleScore: titleRelevance(fileName, celeb) + 18,
+  });
+
+  return candidate ? [candidate] : [];
+}
+
+async function getOverrideCandidate(celeb) {
+  if (!celeb.override) return [];
+
+  const url =
+    "https://commons.wikimedia.org/w/api.php" +
+    "?action=query&format=json" +
+    `&titles=${encodeURIComponent(celeb.override)}` +
+    "&prop=imageinfo&iiprop=url|size|mime|extmetadata" +
+    `&iiurlwidth=${THUMB_WIDTH}`;
+
+  const json = await getJson(url);
+  const page = Object.values(json?.query?.pages ?? {})[0];
+  const info = page?.imageinfo?.[0];
+  const candidate = candidateFromImageInfo(page, info, {
+    fromPage: true,
+    titleScore: 1000,
+    allowSmall: true,
   });
 
   return candidate ? [candidate] : [];
@@ -483,10 +505,25 @@ function detectionScore(candidate, detection) {
 }
 
 async function pickSource(celeb) {
-  const candidates = candidateOrder([
-    ...(await getPageImageCandidate(celeb)),
-    ...(await getSearchCandidates(celeb)),
-  ]);
+  let candidates = [];
+
+  if (celeb.override) {
+    try {
+      candidates = candidateOrder(await getOverrideCandidate(celeb));
+      if (candidates.length === 0) {
+        console.warn(`    ! ${celeb.name}: override "${celeb.override}" was not usable; falling back`);
+      }
+    } catch (err) {
+      console.warn(`    ! ${celeb.name}: override "${celeb.override}" failed (${err.message}); falling back`);
+    }
+  }
+
+  if (candidates.length === 0) {
+    candidates = candidateOrder([
+      ...(await getPageImageCandidate(celeb)),
+      ...(await getSearchCandidates(celeb)),
+    ]);
+  }
 
   if (candidates.length === 0) {
     throw new Error("No usable portrait candidates found");
