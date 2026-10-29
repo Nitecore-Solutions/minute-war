@@ -278,9 +278,10 @@ mysql://avnadmin:...@mysql-....aivencloud.com:PORT/defaultdb?ssl-mode=REQUIRED
 ```
 
 The backend detects `ssl-mode=REQUIRED` and turns it into a mysql2 TLS
-connection. If Node cannot verify Aiven's private CA, download the CA and set
-`DB_SSL_CA_BASE64` (or `DB_SSL_CA` with `\n` escapes) in Render. Do not turn off
-verification just to get past a TLS error.
+connection. Aiven's project CA is self-signed, so Node normally cannot verify it
+out of the box. Download the CA from Aiven Console (or reuse the
+`DB_SSL_CA_BASE64` value from `backend/.env`) and set it in Render, together with
+`DB_SSL=true`. Do not turn off verification just to get past a TLS error.
 
 ### 2. Render web service
 
@@ -300,6 +301,8 @@ tab. The important ones:
 ```
 NODE_ENV=production
 DATABASE_URL=mysql://...
+DB_SSL=true
+DB_SSL_CA_BASE64=<Aiven CA base64>
 DB_POOL_SIZE=5
 JWT_SECRET=<32+ random characters>
 JWT_TTL_DAYS=30
