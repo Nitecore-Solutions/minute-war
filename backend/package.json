@@ -1,0 +1,51 @@
+{
+  "name": "minute-war-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "dev:ws": "node --watch src/ws-server/index.mjs",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "start:ws": "node src/ws-server/index.mjs",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "node scripts/migrate.mjs",
+    "db:reset": "node scripts/migrate.mjs --reset",
+    "db:seed": "node scripts/seed.mjs",
+    "admin:create": "node scripts/create-admin.mjs",
+    "db:query": "node scripts/db-query.mjs",
+    "test": "npm run test:schema && npm run test:api && npm run test:ws && npm run test:admin && npm run test:ads",
+    "test:schema": "node scripts/verify-schema.mjs",
+    "test:api": "node scripts/test-api.mjs",
+    "test:ws": "node scripts/test-ws.mjs",
+    "test:admin": "node scripts/test-admin-login.mjs",
+    "test:ads": "node scripts/test-ads.mjs",
+    "test:encoding": "node scripts/check-encoding.mjs",
+    "ads:test": "node scripts/set-test-ads.mjs",
+    "ads:off": "node scripts/set-test-ads.mjs --off",
+    "images:celeb": "node scripts/build-celeb-images.mjs",
+    "ip": "node scripts/show-ip.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "jose": "^6.0.11",
+    "mysql2": "^3.15.3",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1",
+    "ws": "^8.18.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/ws": "^8.5.13",
+    "babel-plugin-react-compiler": "1.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

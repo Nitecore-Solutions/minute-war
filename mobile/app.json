@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "MINUTE WAR",
+    "slug": "minute-war",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0f0a2e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.minutewar.app"
+    },
+    "android": {
+      "package": "in.minutewar.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0f0a2e"
+      },
+      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE", "VIBRATE", "com.google.android.gms.permission.AD_ID"]
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-status-bar",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true
+        }
+      ]
+    ]
+  }
+}

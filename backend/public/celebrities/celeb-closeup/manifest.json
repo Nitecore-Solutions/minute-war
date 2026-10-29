@@ -1,0 +1,1795 @@
+{
+  "generatedAt": "2026-10-26T12:24:31.347Z",
+  "game": "celeb-closeup",
+  "featureSize": 400,
+  "revealSize": 520,
+  "source": "Wikipedia / Wikimedia Commons",
+  "celebrities": [
+    {
+      "slug": "shah-rukh-khan",
+      "name": "Shah Rukh Khan",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/shah-rukh-khan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/shah-rukh-khan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/shah-rukh-khan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/shah-rukh-khan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/shah-rukh-khan/reveal.jpg"
+      },
+      "source": {
+        "title": "Shah Rukh Khan (Berlin Film Festival 2010).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Shah_Rukh_Khan_(Berlin_Film_Festival_2010).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Shah_Rukh_Khan_%28Berlin_Film_Festival_2010%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Siebbi",
+        "credit": "cropped version of ipernity.com",
+        "description": "Indian actor Shah Rukh Khan leaving the press conference for the film \"My name is Khan\"",
+        "date": "2010-02-12",
+        "originalWidth": 1579,
+        "originalHeight": 1527
+      },
+      "crop": {
+        "face": {
+          "x": 524.6793823242188,
+          "y": 192.9741668701172,
+          "w": 259.239013671875,
+          "h": 346.7727966308594
+        },
+        "sourceWidth": 1280,
+        "sourceHeight": 1238,
+        "score": 230
+      }
+    },
+    {
+      "slug": "salman-khan",
+      "name": "Salman Khan",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/salman-khan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/salman-khan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/salman-khan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/salman-khan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/salman-khan/reveal.jpg"
+      },
+      "source": {
+        "title": "Salman Khan at the launch of 'Ek Tha Tiger's first song 'Mashallah' 15.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Salman_Khan_at_the_launch_of_%27Ek_Tha_Tiger%27s_first_song_%27Mashallah%27_15.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Salman_Khan_at_the_launch_of_%27Ek_Tha_Tiger%27s_first_song_%27Mashallah%27_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/moviemicro/images/id/545809/type/view/imageid/1467651/category/parties",
+        "description": "Salman Khan at the launch of 'Ek Tha Tiger's first song 'Mashallah'",
+        "date": "2012-07-13",
+        "originalWidth": 585,
+        "originalHeight": 881
+      },
+      "crop": {
+        "face": {
+          "x": 179.85348510742188,
+          "y": 144.2933349609375,
+          "w": 213.32061767578125,
+          "h": 292.22320556640625
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 881,
+        "score": 229
+      }
+    },
+    {
+      "slug": "aamir-khan",
+      "name": "Aamir Khan",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/aamir-khan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/aamir-khan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/aamir-khan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/aamir-khan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/aamir-khan/reveal.jpg"
+      },
+      "source": {
+        "title": "Aamir Khan (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Aamir_Khan_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Aamir_Khan_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "GODL-India",
+        "licenseUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+        "artist": "Prime Minister's Office, Government of India",
+        "credit": "This file or its source was published by Press Information Bureau on behalf of Prime Minister's Office, Government of India under the ID 54651 and CNR 57410. ( direct link ) This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing . العربية ∙ বাংলা ∙ Deutsch ∙ English ∙ हिन्दी ∙ 日本語 ∙ македонски ∙ മലയാളം ∙ polski ∙ தமிழ் ∙ ತುಳು ∙ 中文 ∙ 中文（简体） ∙ 中文（繁體） ∙ +/− Aamir Khan calls on PM",
+        "description": "Aamir Khan calls on PM",
+        "date": "2014-06-23 13:23",
+        "originalWidth": 595,
+        "originalHeight": 921
+      },
+      "crop": {
+        "face": {
+          "x": 106.70729064941406,
+          "y": 139.63255310058594,
+          "w": 332.0299987792969,
+          "h": 429.3029479980469
+        },
+        "sourceWidth": 595,
+        "sourceHeight": 921,
+        "score": 242
+      }
+    },
+    {
+      "slug": "amitabh-bachchan",
+      "name": "Amitabh Bachchan",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/amitabh-bachchan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/amitabh-bachchan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/amitabh-bachchan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/amitabh-bachchan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/amitabh-bachchan/reveal.jpg"
+      },
+      "source": {
+        "title": "Indian actor Amitabh Bachchan.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Indian_actor_Amitabh_Bachchan.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Indian_actor_Amitabh_Bachchan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "File:Amitabh Bacchan and Shrinivas Kulkarni.jpg : Shrinivaskulkarni1388 derivative work: Junior Jumper",
+        "credit": "This file was derived from: Amitabh Bacchan and Shrinivas Kulkarni.jpg :",
+        "description": "Amitabh Bachchan, Indian actor.",
+        "date": "2018-11-11 18:37:29",
+        "originalWidth": 1194,
+        "originalHeight": 1655
+      },
+      "crop": {
+        "face": {
+          "x": 308.9378967285156,
+          "y": 315.80767822265625,
+          "w": 352.61016845703125,
+          "h": 492.7538757324219
+        },
+        "sourceWidth": 1154,
+        "sourceHeight": 1600,
+        "score": 252
+      }
+    },
+    {
+      "slug": "akshay-kumar",
+      "name": "Akshay Kumar",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/akshay-kumar/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/akshay-kumar/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/akshay-kumar/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/akshay-kumar/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/akshay-kumar/reveal.jpg"
+      },
+      "source": {
+        "title": "Akshay Kumar National Award for Padman (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Akshay_Kumar_National_Award_for_Padman_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Akshay_Kumar_National_Award_for_Padman_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "GODL-India",
+        "licenseUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+        "artist": "Vice President's Secretariat",
+        "credit": "This file or its source was published by Press Information Bureau on behalf of Vice President's Secretariat, Government of India under the ID 150721 and CNR 137136. ( direct link ) This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing . العربية ∙ বাংলা ∙ Deutsch ∙ English ∙ हिन्दी ∙ 日本語 ∙ македонски ∙ മലയാളം ∙ polski ∙ தமிழ் ∙ ತುಳು ∙ 中文 ∙ 中文（简体） ∙ 中文（繁體） ∙ +/−",
+        "description": "The Vice President, Shri M. Venkaiah Naidu presenting the Rajat Kamal Award to Shri Akshay Kumar for Best Film on Social Issues: Padman, at the 66th National Film Awards function, in New Delhi on December 23, 2019.The Union Minister for Environment, Forest&Climate Change, Information&Broadcasting and Heavy Industries and Public Enterprise, Shri Prakash Javadekar and the Secretary, Ministry of Information&Broadcasting, Shri Ravi Mittal are also seen.",
+        "date": "2019-12-23 12:06:07",
+        "originalWidth": 674,
+        "originalHeight": 716
+      },
+      "crop": {
+        "face": {
+          "x": 176.66893005371094,
+          "y": 75.17083740234375,
+          "w": 173.94161987304688,
+          "h": 226.91366577148438
+        },
+        "sourceWidth": 674,
+        "sourceHeight": 716,
+        "score": 232
+      }
+    },
+    {
+      "slug": "ajay-devgn",
+      "name": "Ajay Devgn",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/ajay-devgn/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/ajay-devgn/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/ajay-devgn/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/ajay-devgn/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/ajay-devgn/reveal.jpg"
+      },
+      "source": {
+        "title": "Drishyam Actor Ajay Devgn with suresh sharma.JPG",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Drishyam_Actor_Ajay_Devgn_with_suresh_sharma.JPG",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Drishyam_Actor_Ajay_Devgn_with_suresh_sharma.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Sureshsharmaptv63",
+        "credit": "Own work",
+        "description": "Drishyam Indian thriller drama film directed by Nishikant Kamat. Actor Ajay Devgn permoting his pinkcity Jaipur.",
+        "date": "2015-07-30",
+        "originalWidth": 1920,
+        "originalHeight": 1080
+      },
+      "crop": {
+        "face": {
+          "x": 301.31756591796875,
+          "y": 174.98292541503906,
+          "w": 225.98178100585938,
+          "h": 291.2952575683594
+        },
+        "sourceWidth": 1280,
+        "sourceHeight": 720,
+        "score": 176
+      }
+    },
+    {
+      "slug": "hrithik-roshan",
+      "name": "Hrithik Roshan",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/hrithik-roshan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/hrithik-roshan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/hrithik-roshan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/hrithik-roshan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/hrithik-roshan/reveal.jpg"
+      },
+      "source": {
+        "title": "Hrithik Roshan snapped at Mehboob studio 02.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Hrithik_Roshan_snapped_at_Mehboob_studio_02.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Hrithik_Roshan_snapped_at_Mehboob_studio_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/celebritymicro/images/id/2787/category/parties/type/view/imageid/1456798/",
+        "description": "Hrithik Roshan snapped at Mehboob studio",
+        "date": "2012-06-20",
+        "originalWidth": 585,
+        "originalHeight": 877
+      },
+      "crop": {
+        "face": {
+          "x": 241.8268280029297,
+          "y": 213.6981201171875,
+          "w": 91.48483276367188,
+          "h": 123.73095703125
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 877,
+        "score": 203
+      }
+    },
+    {
+      "slug": "ranbir-kapoor",
+      "name": "Ranbir Kapoor",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/ranbir-kapoor/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/ranbir-kapoor/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/ranbir-kapoor/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/ranbir-kapoor/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/ranbir-kapoor/reveal.jpg"
+      },
+      "source": {
+        "title": "Ranbir Kapoor promoting Bombay Velvet.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Ranbir_Kapoor_promoting_Bombay_Velvet.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ranbir_Kapoor_promoting_Bombay_Velvet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "bollywoodhungama.com",
+        "description": "Ranbir Kapoor promoting Bombay Velvet in 2015",
+        "date": "2015-04-28",
+        "originalWidth": 585,
+        "originalHeight": 883
+      },
+      "crop": {
+        "face": {
+          "x": 191.0103759765625,
+          "y": 134.61805725097656,
+          "w": 234.1912078857422,
+          "h": 332.9415588378906
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 883,
+        "score": 235
+      }
+    },
+    {
+      "slug": "ranveer-singh",
+      "name": "Ranveer Singh",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/ranveer-singh/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/ranveer-singh/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/ranveer-singh/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/ranveer-singh/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/ranveer-singh/reveal.jpg"
+      },
+      "source": {
+        "title": "Ranveer Singh in 2023 (1).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Ranveer_Singh_in_2023_(1).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ranveer_Singh_in_2023_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "https://stat4.bollywoodhungama.in/wp-content/uploads/2023/02/Photos-Celebs-attend-Sidharth-Malhotra-and-Kiara-Advanis-wedding-reception-48.jpg",
+        "description": "Ranveer Singh at the wedding reception of Siddharth Malhotra and Kiara Advani, in 2023",
+        "date": "2023-02-12",
+        "originalWidth": 585,
+        "originalHeight": 751
+      },
+      "crop": {
+        "face": {
+          "x": 220.38211059570312,
+          "y": 104.18123626708984,
+          "w": 120.05499267578125,
+          "h": 164.3584747314453
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 751,
+        "score": 220
+      }
+    },
+    {
+      "slug": "saif-ali-khan",
+      "name": "Saif Ali Khan",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/saif-ali-khan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/saif-ali-khan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/saif-ali-khan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/saif-ali-khan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/saif-ali-khan/reveal.jpg"
+      },
+      "source": {
+        "title": "Saif Ali Khan in 2024.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Saif_Ali_Khan_in_2024.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Saif_Ali_Khan_in_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "GODL-India",
+        "licenseUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+        "artist": "Prime Minister's Office",
+        "credit": "This file or its source was published by Press Information Bureau on behalf of Prime Minister's Office, Government of India under the ID 172743 . ( direct link ) This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing . العربية ∙ বাংলা ∙ Deutsch ∙ English ∙ हिन्दी ∙ 日本語 ∙ македонски ∙ മലയാളം ∙ polski ∙ தமிழ் ∙ ತುಳು ∙ 中文 ∙ 中文（简体） ∙ 中文（繁體） ∙ +/−",
+        "description": "Kapoor Family meeting with PM at his residence, in New Delhi on December 11, 2024.",
+        "date": "11 December 2024",
+        "originalWidth": 645,
+        "originalHeight": 667
+      },
+      "crop": {
+        "face": {
+          "x": 178.79566955566406,
+          "y": 103.39363098144531,
+          "w": 274.7726135253906,
+          "h": 382.8340148925781
+        },
+        "sourceWidth": 645,
+        "sourceHeight": 667,
+        "score": 241
+      }
+    },
+    {
+      "slug": "anil-kapoor",
+      "name": "Anil Kapoor",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/anil-kapoor/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/anil-kapoor/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/anil-kapoor/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/anil-kapoor/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/anil-kapoor/reveal.jpg"
+      },
+      "source": {
+        "title": "Anil Kapoor still7.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Anil_Kapoor_still7.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Anil_Kapoor_still7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/stills/partiesnevents/Audio_release_of_Black_N_White/still28411.html",
+        "description": "Anil Kapoor at the Audio release of Black N White",
+        "date": "",
+        "originalWidth": 600,
+        "originalHeight": 902
+      },
+      "crop": {
+        "face": {
+          "x": 235.7957305908203,
+          "y": 86.64317321777344,
+          "w": 116.1606216430664,
+          "h": 148.5255126953125
+        },
+        "sourceWidth": 600,
+        "sourceHeight": 902,
+        "score": 214
+      }
+    },
+    {
+      "slug": "sanjay-dutt",
+      "name": "Sanjay Dutt",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/sanjay-dutt/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/sanjay-dutt/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/sanjay-dutt/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/sanjay-dutt/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/sanjay-dutt/reveal.jpg"
+      },
+      "source": {
+        "title": "Sanjay dutt department.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Sanjay_dutt_department.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sanjay_dutt_department.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/celebritymicro/images/id/6447/category/parties/type/view/imageid/1433589/",
+        "description": "Sanjay dutt department",
+        "date": "2012-05-31",
+        "originalWidth": 585,
+        "originalHeight": 682
+      },
+      "crop": {
+        "face": {
+          "x": 168.67324829101562,
+          "y": 66.90868377685547,
+          "w": 108.36775207519531,
+          "h": 155.3368377685547
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 682,
+        "score": 212
+      }
+    },
+    {
+      "slug": "john-abraham",
+      "name": "John Abraham",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/john-abraham/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/john-abraham/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/john-abraham/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/john-abraham/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/john-abraham/reveal.jpg"
+      },
+      "source": {
+        "title": "Abhishek's screening of 'Bol Bachchan' for John Abraham 05.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Abhishek%27s_screening_of_%27Bol_Bachchan%27_for_John_Abraham_05.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Abhishek%27s_screening_of_%27Bol_Bachchan%27_for_John_Abraham_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/more/photos/view/stills/parties-and-events/id/1469640",
+        "description": "Abhishek's screening of 'Bol Bachchan' for John Abraham",
+        "date": "2012-07-16",
+        "originalWidth": 585,
+        "originalHeight": 881
+      },
+      "crop": {
+        "face": {
+          "x": 246.88841247558594,
+          "y": 129.22927856445312,
+          "w": 117.19620513916016,
+          "h": 155.98101806640625
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 881,
+        "score": 213
+      }
+    },
+    {
+      "slug": "kartik-aaryan",
+      "name": "Kartik Aaryan",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/kartik-aaryan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/kartik-aaryan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/kartik-aaryan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/kartik-aaryan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/kartik-aaryan/reveal.jpg"
+      },
+      "source": {
+        "title": "Kartik Aaryan at the Red Sea International Film Festival 2025 (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Kartik_Aaryan_at_the_Red_Sea_International_Film_Festival_2025_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Kartik_Aaryan_at_the_Red_Sea_International_Film_Festival_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Segolene Liger",
+        "credit": "Own work",
+        "description": "Kartik Aaryan attends the \"A Matter Of Life And Death\" screening at the Red Sea International Film Festival 2025 on December 08, 2025 in Jeddah, Saudi Arabia.",
+        "date": "2025-12-08 17:54:35",
+        "originalWidth": 2635,
+        "originalHeight": 3291
+      },
+      "crop": {
+        "face": {
+          "x": 401.63800048828125,
+          "y": 392.51287841796875,
+          "w": 410.4618225097656,
+          "h": 567.44189453125
+        },
+        "sourceWidth": 1280,
+        "sourceHeight": 1599,
+        "score": 259
+      }
+    },
+    {
+      "slug": "ayushmann-khurrana",
+      "name": "Ayushmann Khurrana",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/ayushmann-khurrana/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/ayushmann-khurrana/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/ayushmann-khurrana/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/ayushmann-khurrana/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/ayushmann-khurrana/reveal.jpg"
+      },
+      "source": {
+        "title": "Ayushmann Khurrana at IFP Season 8.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Ayushmann_Khurrana_at_IFP_Season_8.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ayushmann_Khurrana_at_IFP_Season_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Megha Thakker",
+        "credit": "Own work",
+        "description": "Ayushmann Khurrana at IFP Season 8",
+        "date": "2018-10-25",
+        "originalWidth": 2048,
+        "originalHeight": 1367
+      },
+      "crop": {
+        "face": {
+          "x": 670.0188598632812,
+          "y": 267.58331298828125,
+          "w": 171.09701538085938,
+          "h": 227.8221435546875
+        },
+        "sourceWidth": 1280,
+        "sourceHeight": 854,
+        "score": 210
+      }
+    },
+    {
+      "slug": "nawazuddin-siddiqui",
+      "name": "Nawazuddin Siddiqui",
+      "gender": "m",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/nawazuddin-siddiqui/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/nawazuddin-siddiqui/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/nawazuddin-siddiqui/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/nawazuddin-siddiqui/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/nawazuddin-siddiqui/reveal.jpg"
+      },
+      "source": {
+        "title": "Nawazuddin Siddiqui - IIFA 2017 Green Carpet (36349709816) (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Nawazuddin_Siddiqui_-_IIFA_2017_Green_Carpet_(36349709816)_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Nawazuddin_Siddiqui_-_IIFA_2017_Green_Carpet_%2836349709816%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "artist": "Laura Lee Dooley from Arlington, VA, USA",
+        "credit": "IIFA 2017 Green Carpet",
+        "description": "Nawazuddin Siddiqui. International Indian Film Academy awards Green Carpet (MetLife Stadium) in East Rutherford, New Jersey #IIFA2017 #IIFA",
+        "date": "2017-07-15 21:26:16",
+        "originalWidth": 1596,
+        "originalHeight": 2400
+      },
+      "crop": {
+        "face": {
+          "x": 354.33349609375,
+          "y": 205.7425079345703,
+          "w": 283.40777587890625,
+          "h": 381.7919006347656
+        },
+        "sourceWidth": 1064,
+        "sourceHeight": 1600,
+        "score": 232
+      }
+    },
+    {
+      "slug": "deepika-padukone",
+      "name": "Deepika Padukone",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/deepika-padukone/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/deepika-padukone/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/deepika-padukone/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/deepika-padukone/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/deepika-padukone/reveal.jpg"
+      },
+      "source": {
+        "title": "Deepika Padukone 2025 (1).png",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Deepika_Padukone_2025_(1).png",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Deepika_Padukone_2025_%281%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Narendra Modi",
+        "credit": "https://youtube.com/watch?v=XIk449UxW_M&t=827s",
+        "description": "Pariksha Pe Charcha with Deepika Padukone on Mental Health Breaking Stigma & Building Resilience (13:47)",
+        "date": "2025-02-12",
+        "originalWidth": 1080,
+        "originalHeight": 1080
+      },
+      "crop": {
+        "face": {
+          "x": 472.8410949707031,
+          "y": 198.3658447265625,
+          "w": 295.70428466796875,
+          "h": 389.4268798828125
+        },
+        "sourceWidth": 1080,
+        "sourceHeight": 1080,
+        "score": 265
+      }
+    },
+    {
+      "slug": "priyanka-chopra",
+      "name": "Priyanka Chopra",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/priyanka-chopra/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/priyanka-chopra/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/priyanka-chopra/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/priyanka-chopra/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/priyanka-chopra/reveal.jpg"
+      },
+      "source": {
+        "title": "Priyanka-chopra-gesf-2018-7565.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Priyanka-chopra-gesf-2018-7565.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Priyanka-chopra-gesf-2018-7565.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Fuzheado",
+        "credit": "Own work",
+        "description": "Priyanka Chopra at the 2018 Global Education and Skills Forum in Dubai.",
+        "date": "2018-03-18",
+        "originalWidth": 2447,
+        "originalHeight": 3671
+      },
+      "crop": {
+        "face": {
+          "x": 339.49249267578125,
+          "y": 289.52728271484375,
+          "w": 433.1621398925781,
+          "h": 538.0362548828125
+        },
+        "sourceWidth": 1067,
+        "sourceHeight": 1600,
+        "score": 228
+      }
+    },
+    {
+      "slug": "alia-bhatt",
+      "name": "Alia Bhatt",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/alia-bhatt/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/alia-bhatt/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/alia-bhatt/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/alia-bhatt/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/alia-bhatt/reveal.jpg"
+      },
+      "source": {
+        "title": "Alia Bhatt attends at the 2026 Cannes Film Festival (cropped) (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Alia_Bhatt_attends_at_the_2026_Cannes_Film_Festival_(cropped)_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Alia_Bhatt_attends_at_the_2026_Cannes_Film_Festival_%28cropped%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Gabriel Hutchinson",
+        "credit": "Own work",
+        "description": "Alia Bhatt on the opening red carpet of the 2026 Cannes Film Festival",
+        "date": "2026-05-12 17:25:54",
+        "originalWidth": 1278,
+        "originalHeight": 1938
+      },
+      "crop": {
+        "face": {
+          "x": 432.3961181640625,
+          "y": 264.4532470703125,
+          "w": 365.6653747558594,
+          "h": 496.7952880859375
+        },
+        "sourceWidth": 1055,
+        "sourceHeight": 1600,
+        "score": 264
+      }
+    },
+    {
+      "slug": "aishwarya-rai",
+      "name": "Aishwarya Rai",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/aishwarya-rai/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/aishwarya-rai/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/aishwarya-rai/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/aishwarya-rai/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/aishwarya-rai/reveal.jpg"
+      },
+      "source": {
+        "title": "Aishwarya Rai Cannes 2017.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Aishwarya_Rai_Cannes_2017.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Aishwarya_Rai_Cannes_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Georges Biard",
+        "credit": "Own work",
+        "description": "Aishwarya Rai au festival de Cannes",
+        "date": "2017-05-18",
+        "originalWidth": 566,
+        "originalHeight": 800
+      },
+      "crop": {
+        "face": {
+          "x": 212.67813110351562,
+          "y": 101.0180892944336,
+          "w": 164.70404052734375,
+          "h": 211.2465362548828
+        },
+        "sourceWidth": 566,
+        "sourceHeight": 800,
+        "score": 252
+      }
+    },
+    {
+      "slug": "kareena-kapoor",
+      "name": "Kareena Kapoor",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/kareena-kapoor/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/kareena-kapoor/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/kareena-kapoor/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/kareena-kapoor/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/kareena-kapoor/reveal.jpg"
+      },
+      "source": {
+        "title": "Kareena Kapoor Khan in December 2024.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Kareena_Kapoor_Khan_in_December_2024.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Kareena_Kapoor_Khan_in_December_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "GODL-India",
+        "licenseUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+        "artist": "Prime Minister's Office",
+        "credit": "This file or its source was published by Press Information Bureau on behalf of Prime Minister's Office, Government of India under the ID 172743 . ( direct link ) This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing . العربية ∙ বাংলা ∙ Deutsch ∙ English ∙ हिन्दी ∙ 日本語 ∙ македонски ∙ മലയാളം ∙ polski ∙ தமிழ் ∙ ತುಳು ∙ 中文 ∙ 中文（简体） ∙ 中文（繁體） ∙ +/−",
+        "description": "Kapoor Family meeting with PM at his residence, in New Delhi on December 11, 2024.",
+        "date": "11 December 2024",
+        "originalWidth": 663,
+        "originalHeight": 692
+      },
+      "crop": {
+        "face": {
+          "x": 214.13516235351562,
+          "y": 141.80978393554688,
+          "w": 269.615478515625,
+          "h": 342.65057373046875
+        },
+        "sourceWidth": 663,
+        "sourceHeight": 692,
+        "score": 246
+      }
+    },
+    {
+      "slug": "katrina-kaif",
+      "name": "Katrina Kaif",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/katrina-kaif/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/katrina-kaif/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/katrina-kaif/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/katrina-kaif/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/katrina-kaif/reveal.jpg"
+      },
+      "source": {
+        "title": "Katrina Kaif at the Bharat audio launch.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Katrina_Kaif_at_the_Bharat_audio_launch.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Katrina_Kaif_at_the_Bharat_audio_launch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "PR WIRE Silverscreen Media Inc. (https://silverscreen.in)",
+        "credit": "https://silverscreenindia.com/photos/salman-khan-katrina-kaif-at-the-bharat-audio-launch/#gallery=1&slide=2",
+        "description": "Kaif in 2019",
+        "date": "2019-05-20",
+        "originalWidth": 1032,
+        "originalHeight": 1548
+      },
+      "crop": {
+        "face": {
+          "x": 323.5859375,
+          "y": 144.19265747070312,
+          "w": 316.274169921875,
+          "h": 414.58734130859375
+        },
+        "sourceWidth": 1032,
+        "sourceHeight": 1548,
+        "score": 254
+      }
+    },
+    {
+      "slug": "anushka-sharma",
+      "name": "Anushka Sharma",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/anushka-sharma/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/anushka-sharma/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/anushka-sharma/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/anushka-sharma/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/anushka-sharma/reveal.jpg"
+      },
+      "source": {
+        "title": "Anushka sharma womens health magazine.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Anushka_sharma_womens_health_magazine.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Anushka_sharma_womens_health_magazine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/celebritymicro/images/id/517/category/parties/type/view/imageid/1428031/",
+        "description": "Anushka sharma womens health magazine",
+        "date": "2012-05-29",
+        "originalWidth": 585,
+        "originalHeight": 882
+      },
+      "crop": {
+        "face": {
+          "x": 199.23782348632812,
+          "y": 149.9744873046875,
+          "w": 167.04627990722656,
+          "h": 214.27366638183594
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 882,
+        "score": 218
+      }
+    },
+    {
+      "slug": "madhuri-dixit",
+      "name": "Madhuri Dixit",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/madhuri-dixit/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/madhuri-dixit/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/madhuri-dixit/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/madhuri-dixit/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/madhuri-dixit/reveal.jpg"
+      },
+      "source": {
+        "title": "Madhuri Dixit in November 2022.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Madhuri_Dixit_in_November_2022.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Madhuri_Dixit_in_November_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "https://media5.bollywoodhungama.in/wp-content/uploads/2022/11/Photos-Madhuri-Dixit-Karan-Johar-and-others-snapped-on-the-sets-of-Jhalak-Dikhala-Jaa-4.jpgwby ?",
+        "description": "Indian actress Madhuri Dixit snapped on the sets of Jhalak Dikhhla Jaa",
+        "date": "2022-11-22",
+        "originalWidth": 915,
+        "originalHeight": 1080
+      },
+      "crop": {
+        "face": {
+          "x": 336.3789978027344,
+          "y": 107.564208984375,
+          "w": 232.107421875,
+          "h": 307.42559814453125
+        },
+        "sourceWidth": 915,
+        "sourceHeight": 1080,
+        "score": 262
+      }
+    },
+    {
+      "slug": "kajol",
+      "name": "Kajol",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/kajol/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/kajol/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/kajol/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/kajol/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/kajol/reveal.jpg"
+      },
+      "source": {
+        "title": "Kajol at filmfare 2018.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Kajol_at_filmfare_2018.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kajol_at_filmfare_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "http://www.bollywoodhungama.com/news/parties-and-events/celebs-attend-the-63rd-jio-filmfare-awards-2018/celebs-spotted-at-63rd-jio-filmfare-awards-2018-13/",
+        "description": "Kajol devgan",
+        "date": "2018-06-18 21:49:43",
+        "originalWidth": 585,
+        "originalHeight": 616
+      },
+      "crop": {
+        "face": {
+          "x": 212.46670532226562,
+          "y": 134.90869140625,
+          "w": 118.81428527832031,
+          "h": 158.88050842285156
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 616,
+        "score": 223
+      }
+    },
+    {
+      "slug": "vidya-balan",
+      "name": "Vidya Balan",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/vidya-balan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/vidya-balan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/vidya-balan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/vidya-balan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/vidya-balan/reveal.jpg"
+      },
+      "source": {
+        "title": "Vidya Balan in 2020.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Vidya_Balan_in_2020.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Vidya_Balan_in_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "https://www.bollywoodhungama.com/news/parties-and-events/photos-vidya-balan-snapped-birthday-celebration/photos-vidya-balan-snapped-during-her-birthday-celebration-3/",
+        "description": "Vidya Balan celebrating her birthday in 2020",
+        "date": "2020-01-01",
+        "originalWidth": 710,
+        "originalHeight": 888
+      },
+      "crop": {
+        "face": {
+          "x": 251.55267333984375,
+          "y": 182.4221649169922,
+          "w": 212.3013153076172,
+          "h": 281.1333923339844
+        },
+        "sourceWidth": 710,
+        "sourceHeight": 888,
+        "score": 235
+      }
+    },
+    {
+      "slug": "shraddha-kapoor",
+      "name": "Shraddha Kapoor",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/shraddha-kapoor/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/shraddha-kapoor/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/shraddha-kapoor/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/shraddha-kapoor/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/shraddha-kapoor/reveal.jpg"
+      },
+      "source": {
+        "title": "Shraddha Kapoor Promote Batti Gul Meter Chalu.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Shraddha_Kapoor_Promote_Batti_Gul_Meter_Chalu.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Shraddha_Kapoor_Promote_Batti_Gul_Meter_Chalu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "PR WIRE Silverscreen Media Inc. (https://silverscreen.in)",
+        "credit": "https://silverscreenindia.com/photos/shahid-kapoor-shraddha-kapoor-promote-batti-gul-meter-chalu/#gallery=1&slide=9",
+        "description": "Shradhha Kapoor snapped during the promotions of Batti Gul Meter Chalu in 2018",
+        "date": "2018-09-20",
+        "originalWidth": 1800,
+        "originalHeight": 2700
+      },
+      "crop": {
+        "face": {
+          "x": 416.6153564453125,
+          "y": 128.92556762695312,
+          "w": 229.44387817382812,
+          "h": 298.06964111328125
+        },
+        "sourceWidth": 1067,
+        "sourceHeight": 1600,
+        "score": 228
+      }
+    },
+    {
+      "slug": "kriti-sanon",
+      "name": "Kriti Sanon",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/kriti-sanon/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/kriti-sanon/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/kriti-sanon/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/kriti-sanon/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/kriti-sanon/reveal.jpg"
+      },
+      "source": {
+        "title": "Kriti Sanon at Adipurush pre release event (2) (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Kriti_Sanon_at_Adipurush_pre_release_event_(2)_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Kriti_Sanon_at_Adipurush_pre_release_event_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Verghese TK",
+        "credit": "Own work",
+        "description": "Kriti Sanon at Adipurush pre release event",
+        "date": "2023-06-06 20:23:08",
+        "originalWidth": 2921,
+        "originalHeight": 4003
+      },
+      "crop": {
+        "face": {
+          "x": 409.2924499511719,
+          "y": 202.89767456054688,
+          "w": 345.89801025390625,
+          "h": 418.9696044921875
+        },
+        "sourceWidth": 1168,
+        "sourceHeight": 1600,
+        "score": 255
+      }
+    },
+    {
+      "slug": "kiara-advani",
+      "name": "Kiara Advani",
+      "gender": "f",
+      "region": "bollywood",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/kiara-advani/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/kiara-advani/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/kiara-advani/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/kiara-advani/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/kiara-advani/reveal.jpg"
+      },
+      "source": {
+        "title": "Kiara Advani at Vinaya Vidheya Rama interview.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Kiara_Advani_at_Vinaya_Vidheya_Rama_interview.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Kiara_Advani_at_Vinaya_Vidheya_Rama_interview.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Verghese TK",
+        "credit": "Own work",
+        "description": "Kiara Advani at Vinaya Vidheya Rama interview",
+        "date": "2019-01-04 11:10:38",
+        "originalWidth": 2986,
+        "originalHeight": 4480
+      },
+      "crop": {
+        "face": {
+          "x": 364.21337890625,
+          "y": 131.4159698486328,
+          "w": 333.7693786621094,
+          "h": 451.5409851074219
+        },
+        "sourceWidth": 1067,
+        "sourceHeight": 1600,
+        "score": 231
+      }
+    },
+    {
+      "slug": "rajinikanth",
+      "name": "Rajinikanth",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/rajinikanth/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/rajinikanth/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/rajinikanth/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/rajinikanth/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/rajinikanth/reveal.jpg"
+      },
+      "source": {
+        "title": "Rajinikanth in 2019.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Rajinikanth_in_2019.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Rajinikanth_in_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Dani Charles Silverscreen Media Inc. (https://silverscreen.in)",
+        "credit": "https://silverscreen.in/photos/rajinikanth-p-bharathiraja-felicitates-writer-kalaignanam/#&gallery=1&slide=27",
+        "description": "Rajinikanth, Indian Actor",
+        "date": "2019-08-16",
+        "originalWidth": 559,
+        "originalHeight": 745
+      },
+      "crop": {
+        "face": {
+          "x": 172.63919067382812,
+          "y": 82.01950073242188,
+          "w": 248.16636657714844,
+          "h": 334.1484680175781
+        },
+        "sourceWidth": 559,
+        "sourceHeight": 745,
+        "score": 265
+      }
+    },
+    {
+      "slug": "kamal-haasan",
+      "name": "Kamal Haasan",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/kamal-haasan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/kamal-haasan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/kamal-haasan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/kamal-haasan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/kamal-haasan/reveal.jpg"
+      },
+      "source": {
+        "title": "Kamal Haasan at 2023 San Diego Comic-Con International by Gage Skidmore, 005 (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Kamal_Haasan_at_2023_San_Diego_Comic-Con_International_by_Gage_Skidmore,_005_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Kamal_Haasan_at_2023_San_Diego_Comic-Con_International_by_Gage_Skidmore%2C_005_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "Gage Skidmore",
+        "credit": "https://www.flickr.com/photos/22007612@N05/53079770887/",
+        "description": "Rana Daggubati, Nag Ashwin, Kamal Haasan and Prabhas speaking at the 2023 San Diego Comic Con International, for \"Project K\", at the San Diego Convention Center in San Diego, California. Please attribute to Gage Skidmore if used elsewhere.",
+        "date": "2023-07-20 14:05:27",
+        "originalWidth": 1850,
+        "originalHeight": 2154
+      },
+      "crop": {
+        "face": {
+          "x": 467.28778076171875,
+          "y": 316.80303955078125,
+          "w": 416.940673828125,
+          "h": 467.3075866699219
+        },
+        "sourceWidth": 1280,
+        "sourceHeight": 1490,
+        "score": 265
+      }
+    },
+    {
+      "slug": "prabhas",
+      "name": "Prabhas",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/prabhas/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/prabhas/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/prabhas/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/prabhas/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/prabhas/reveal.jpg"
+      },
+      "source": {
+        "title": "Prabhas at Saaho Pre release event (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Prabhas_at_Saaho_Pre_release_event_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Prabhas_at_Saaho_Pre_release_event_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "https://www.bollywoodhungama.com/news/parties-and-events/photos-prabhas-shraddha-kapoor-chunky-pandey-others-snapped-press-meet-saaho/photos-prabhas-shraddha-kapoor-chunky-pandey-and-others-snapped-at-the-press-meet-of-saaho-5/",
+        "description": "Prabhas at Saaho Pre release event",
+        "date": "2024-10-17",
+        "originalWidth": 730,
+        "originalHeight": 836
+      },
+      "crop": {
+        "face": {
+          "x": 234.52374267578125,
+          "y": 118.1072998046875,
+          "w": 176.52732849121094,
+          "h": 226.63320922851562
+        },
+        "sourceWidth": 730,
+        "sourceHeight": 836,
+        "score": 222
+      }
+    },
+    {
+      "slug": "allu-arjun",
+      "name": "Allu Arjun",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/allu-arjun/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/allu-arjun/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/allu-arjun/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/allu-arjun/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/allu-arjun/reveal.jpg"
+      },
+      "source": {
+        "title": "Allu Arjun at Pushpa 2 The Rule meet.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Allu_Arjun_at_Pushpa_2_The_Rule_meet.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Allu_Arjun_at_Pushpa_2_The_Rule_meet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Unknown",
+        "credit": "https://moviewingz.com/from-pushpa-to-forbes-actor-allu-arjuns-pan-india-stardom-takes-center-stage/",
+        "description": "Icon Star Allu Arjun File:Icon star allu arjun",
+        "date": "2024-12-15",
+        "originalWidth": 603,
+        "originalHeight": 707
+      },
+      "crop": {
+        "face": {
+          "x": 194.12811279296875,
+          "y": 141.45098876953125,
+          "w": 206.15838623046875,
+          "h": 252.31353759765625
+        },
+        "sourceWidth": 603,
+        "sourceHeight": 707,
+        "score": 251
+      }
+    },
+    {
+      "slug": "ram-charan",
+      "name": "Ram Charan",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/ram-charan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/ram-charan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/ram-charan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/ram-charan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/ram-charan/reveal.jpg"
+      },
+      "source": {
+        "title": "Ram Charan at Game Changer trailer launch.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Ram_Charan_at_Game_Changer_trailer_launch.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Ram_Charan_at_Game_Changer_trailer_launch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "https://www.bollywoodhungama.com/news/parties-and-events/photos-ram-charan-s-j-suryah-dil-raju-anil-thadani-snapped-game-changer-trailer-launch/photos-ram-charan-s-j-suryah-dil-raju-and-anil-thadani-snapped-at-game-changer-trailer-launch-3/",
+        "description": "Ram Charan at Game Changer trailer launch",
+        "date": "2025-02-01",
+        "originalWidth": 1170,
+        "originalHeight": 1544
+      },
+      "crop": {
+        "face": {
+          "x": 406.45037841796875,
+          "y": 110.78106689453125,
+          "w": 202.18499755859375,
+          "h": 252.1583251953125
+        },
+        "sourceWidth": 1170,
+        "sourceHeight": 1544,
+        "score": 246
+      }
+    },
+    {
+      "slug": "vijay",
+      "name": "Vijay",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/vijay/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/vijay/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/vijay/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/vijay/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/vijay/reveal.jpg"
+      },
+      "source": {
+        "title": "JosephVijay.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:JosephVijay.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/JosephVijay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "GODL-India",
+        "licenseUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+        "artist": "Prime Minister's Office",
+        "credit": "https://x.com/PMOIndia/status/2059601529292906536/",
+        "description": "C. Joseph Vijay, Chief Minister of Tamil Nadu",
+        "date": "2026-05-27",
+        "originalWidth": 602,
+        "originalHeight": 753
+      },
+      "crop": {
+        "face": {
+          "x": 192.88626098632812,
+          "y": 168.40350341796875,
+          "w": 251.44715881347656,
+          "h": 321.7266845703125
+        },
+        "sourceWidth": 602,
+        "sourceHeight": 753,
+        "score": 265
+      }
+    },
+    {
+      "slug": "dhanush",
+      "name": "Dhanush",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/dhanush/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/dhanush/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/dhanush/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/dhanush/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/dhanush/reveal.jpg"
+      },
+      "source": {
+        "title": "Dhanush at VIP 2 Success Meet.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Dhanush_at_VIP_2_Success_Meet.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Dhanush_at_VIP_2_Success_Meet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Dani Charles Silverscreen Media Inc. (https://silverscreen.in)",
+        "credit": "https://silverscreenindia.com/photos/pictures-soundarya-rajinikanth-dhanush-others-vip-2-success-meet/#&gallery=1&slide=5",
+        "description": "Dhanush at VIP 2 Success Meet",
+        "date": "2017-08-16",
+        "originalWidth": 1800,
+        "originalHeight": 2700
+      },
+      "crop": {
+        "face": {
+          "x": 367.8451232910156,
+          "y": 244.79640197753906,
+          "w": 405.42572021484375,
+          "h": 498.8974914550781
+        },
+        "sourceWidth": 1067,
+        "sourceHeight": 1600,
+        "score": 256
+      }
+    },
+    {
+      "slug": "suriya",
+      "name": "Suriya",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/suriya/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/suriya/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/suriya/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/suriya/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/suriya/reveal.jpg"
+      },
+      "source": {
+        "title": "Retro audio launch - Suriya.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Retro_audio_launch_-_Suriya.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Retro_audio_launch_-_Suriya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Shiva CK",
+        "credit": "Own work",
+        "description": "Retro audio launch - Suriya",
+        "date": "2025-04-23 23:51:03",
+        "originalWidth": 809,
+        "originalHeight": 1080
+      },
+      "crop": {
+        "face": {
+          "x": 272.30078125,
+          "y": 235.77464294433594,
+          "w": 374.7245788574219,
+          "h": 445.3847351074219
+        },
+        "sourceWidth": 809,
+        "sourceHeight": 1080,
+        "score": 258
+      }
+    },
+    {
+      "slug": "mohanlal",
+      "name": "Mohanlal",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/mohanlal/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/mohanlal/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/mohanlal/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/mohanlal/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/mohanlal/reveal.jpg"
+      },
+      "source": {
+        "title": "Kerala School Kalolsavam 2026 day 5 Mohanlal (277) (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Kerala_School_Kalolsavam_2026_day_5_Mohanlal_(277)_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Kerala_School_Kalolsavam_2026_day_5_Mohanlal_%28277%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Rahul Sankar",
+        "credit": "Own work",
+        "description": "Kerala School Kalolsavam 2026 day 5",
+        "date": "2025-01-18 16:05:22",
+        "originalWidth": 2821,
+        "originalHeight": 3361
+      },
+      "crop": {
+        "face": {
+          "x": 441.5203857421875,
+          "y": 316.307373046875,
+          "w": 381.8209533691406,
+          "h": 494.0999450683594
+        },
+        "sourceWidth": 1280,
+        "sourceHeight": 1525,
+        "score": 261
+      }
+    },
+    {
+      "slug": "mammootty",
+      "name": "Mammootty",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/mammootty/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/mammootty/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/mammootty/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/mammootty/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/mammootty/reveal.jpg"
+      },
+      "source": {
+        "title": "Mammootty, 2022.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Mammootty,_2022.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Mammootty%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Firoze Edassery",
+        "credit": "Own work",
+        "description": "Indian Actor Sri. Mammootty attending Kairali TV Business Awards at The Ritz-Carlton, Dubai International Financial Centre",
+        "date": "2022-02-04 13:47:08",
+        "originalWidth": 1857,
+        "originalHeight": 2476
+      },
+      "crop": {
+        "face": {
+          "x": 446.6727600097656,
+          "y": 273.8242492675781,
+          "w": 379.54022216796875,
+          "h": 551.5025024414062
+        },
+        "sourceWidth": 1200,
+        "sourceHeight": 1600,
+        "score": 250
+      }
+    },
+    {
+      "slug": "dulquer-salmaan",
+      "name": "Dulquer Salmaan",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/dulquer-salmaan/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/dulquer-salmaan/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/dulquer-salmaan/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/dulquer-salmaan/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/dulquer-salmaan/reveal.jpg"
+      },
+      "source": {
+        "title": "Dulquer Salmaan at Amazon Prime Video event - It Starts Here 2026.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Dulquer_Salmaan_at_Amazon_Prime_Video_event_-_It_Starts_Here_2026.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Dulquer_Salmaan_at_Amazon_Prime_Video_event_-_It_Starts_Here_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "artist": "Gixson",
+        "credit": "Own work",
+        "description": "Dulquer Salmaan at Amazon Prime Video event - It Starts Here 2026",
+        "date": "2026-03-19",
+        "originalWidth": 3048,
+        "originalHeight": 4064
+      },
+      "crop": {
+        "face": {
+          "x": 423.27392578125,
+          "y": 167.49974060058594,
+          "w": 324.8428955078125,
+          "h": 473.8392639160156
+        },
+        "sourceWidth": 1200,
+        "sourceHeight": 1600,
+        "score": 229
+      }
+    },
+    {
+      "slug": "mahesh-babu",
+      "name": "Mahesh Babu",
+      "gender": "m",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/mahesh-babu/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/mahesh-babu/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/mahesh-babu/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/mahesh-babu/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/mahesh-babu/reveal.jpg"
+      },
+      "source": {
+        "title": "Mahesh Babu in Spyder (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Mahesh_Babu_in_Spyder_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mahesh_Babu_in_Spyder_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "http://www.princemahesh.com/ http://www.princemahesh.com/new/wp-content/gallery/spyder-stills/mahesh-babu-spyder-stills-6.jpg",
+        "credit": "http://www.princemahesh.com/",
+        "description": "Mahesh Babu at 61st Filmfare awards south",
+        "date": "2017-07-27 00:25:34",
+        "originalWidth": 675,
+        "originalHeight": 901
+      },
+      "crop": {
+        "face": {
+          "x": 217.66851806640625,
+          "y": 203.00119018554688,
+          "w": 275.45208740234375,
+          "h": 371.86785888671875
+        },
+        "sourceWidth": 675,
+        "sourceHeight": 901,
+        "score": 266
+      }
+    },
+    {
+      "slug": "nayanthara",
+      "name": "Nayanthara",
+      "gender": "f",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/nayanthara/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/nayanthara/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/nayanthara/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/nayanthara/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/nayanthara/reveal.jpg"
+      },
+      "source": {
+        "title": "Nayanthara during toxic album launch event.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Nayanthara_during_toxic_album_launch_event.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Nayanthara_during_toxic_album_launch_event.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Reaaaan",
+        "credit": "Own work",
+        "description": "Nayanthara during toxic album launch event photo by Reaaan",
+        "date": "2026-08-20",
+        "originalWidth": 1122,
+        "originalHeight": 1402
+      },
+      "crop": {
+        "face": {
+          "x": 415.457275390625,
+          "y": 312.82537841796875,
+          "w": 320.2588195800781,
+          "h": 441.5629577636719
+        },
+        "sourceWidth": 1122,
+        "sourceHeight": 1402,
+        "score": 231
+      }
+    },
+    {
+      "slug": "samantha-ruth-prabhu",
+      "name": "Samantha Ruth Prabhu",
+      "gender": "f",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/samantha-ruth-prabhu/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/samantha-ruth-prabhu/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/samantha-ruth-prabhu/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/samantha-ruth-prabhu/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/samantha-ruth-prabhu/reveal.jpg"
+      },
+      "source": {
+        "title": "Samantha at Kushi Musical concert (2) (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Samantha_at_Kushi_Musical_concert_(2)_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Samantha_at_Kushi_Musical_concert_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Verghese TK",
+        "credit": "Own work",
+        "description": "Samantha Ruth Prabhu at Kushi Musical concert",
+        "date": "2023-08-15 19:04:02",
+        "originalWidth": 2901,
+        "originalHeight": 4026
+      },
+      "crop": {
+        "face": {
+          "x": 458.49432373046875,
+          "y": 208.35621643066406,
+          "w": 298.0122985839844,
+          "h": 372.7352600097656
+        },
+        "sourceWidth": 1153,
+        "sourceHeight": 1600,
+        "score": 233
+      }
+    },
+    {
+      "slug": "rashmika-mandanna",
+      "name": "Rashmika Mandanna",
+      "gender": "f",
+      "region": "south",
+      "difficulty": "easy",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/rashmika-mandanna/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/rashmika-mandanna/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/rashmika-mandanna/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/rashmika-mandanna/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/rashmika-mandanna/reveal.jpg"
+      },
+      "source": {
+        "title": "Rashmika mandanna at an interview.png",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Rashmika_mandanna_at_an_interview.png",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Rashmika_mandanna_at_an_interview.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Sakshi Tv",
+        "credit": "YouTube : https://www.youtube.com/watch?v=K1SDl20lkZ8 – View/save archived versions on archive.org",
+        "description": "Rashmika mandanna at an interview",
+        "date": "2018-08-15",
+        "originalWidth": 953,
+        "originalHeight": 836
+      },
+      "crop": {
+        "face": {
+          "x": 293.6222839355469,
+          "y": 112.89907836914062,
+          "w": 283.55487060546875,
+          "h": 341.87176513671875
+        },
+        "sourceWidth": 953,
+        "sourceHeight": 836,
+        "score": 234
+      }
+    },
+    {
+      "slug": "tamannaah",
+      "name": "Tamannaah Bhatia",
+      "gender": "f",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/tamannaah/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/tamannaah/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/tamannaah/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/tamannaah/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/tamannaah/reveal.jpg"
+      },
+      "source": {
+        "title": "Tamannaah Bhatia attends the screening of Do Baaraa at the Indian Film Festival of Melbourne.jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Tamannaah_Bhatia_attends_the_screening_of_Do_Baaraa_at_the_Indian_Film_Festival_of_Melbourne.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Tamannaah_Bhatia_attends_the_screening_of_Do_Baaraa_at_the_Indian_Film_Festival_of_Melbourne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "Bollywood Hungama",
+        "credit": "https://www.bollywoodhungama.com/news/parties-and-events/photos-taapsee-pannu-attends-screening-baaraa-indian-film-festival-melbourne/photos-taapsee-pannu-attends-the-screening-of-do-baaraa-at-the-indian-film-festival-of-melbourne-3",
+        "description": "Tamannaah Bhatia attends the screening of Do Baaraa at the Indian Film Festival of Melbourne",
+        "date": "2022-08-13",
+        "originalWidth": 585,
+        "originalHeight": 878
+      },
+      "crop": {
+        "face": {
+          "x": 238.2915802001953,
+          "y": 144.26055908203125,
+          "w": 106.17171478271484,
+          "h": 144.5519256591797
+        },
+        "sourceWidth": 585,
+        "sourceHeight": 878,
+        "score": 216
+      }
+    },
+    {
+      "slug": "trisha",
+      "name": "Trisha Krishnan",
+      "gender": "f",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/trisha/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/trisha/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/trisha/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/trisha/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/trisha/reveal.jpg"
+      },
+      "source": {
+        "title": "Trisha Krishnan at PS1 pre release event (3) (cropped).jpg",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Trisha_Krishnan_at_PS1_pre_release_event_(3)_(cropped).jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Trisha_Krishnan_at_PS1_pre_release_event_%283%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Verghese TK",
+        "credit": "Own work",
+        "description": "Trisha Krishnan at Ponniyin Selvan: 1 pre release event",
+        "date": "2022-09-23 21:02:40",
+        "originalWidth": 2985,
+        "originalHeight": 4032
+      },
+      "crop": {
+        "face": {
+          "x": 413.58782958984375,
+          "y": 173.6896209716797,
+          "w": 342.8923034667969,
+          "h": 440.3096008300781
+        },
+        "sourceWidth": 1184,
+        "sourceHeight": 1600,
+        "score": 259
+      }
+    },
+    {
+      "slug": "sai-pallavi",
+      "name": "Sai Pallavi",
+      "gender": "f",
+      "region": "south",
+      "difficulty": "medium",
+      "images": {
+        "eyes": "/celebrities/celeb-closeup/sai-pallavi/eyes.jpg",
+        "nose": "/celebrities/celeb-closeup/sai-pallavi/nose.jpg",
+        "lips": "/celebrities/celeb-closeup/sai-pallavi/lips.jpg",
+        "hair": "/celebrities/celeb-closeup/sai-pallavi/hair.jpg",
+        "reveal": "/celebrities/celeb-closeup/sai-pallavi/reveal.jpg"
+      },
+      "source": {
+        "title": "Sai pallavi fidaa.png",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Sai_pallavi_fidaa.png",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Sai_pallavi_fidaa.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "artist": "ETV Andhra Pradesh",
+        "credit": "YouTube : https://www.youtube.com/watch?v=XeXgEH0AS3I – View/save archived versions on archive.org",
+        "description": "Sai pallavi at Fidaa Sucess meet",
+        "date": "2017-08-03",
+        "originalWidth": 809,
+        "originalHeight": 857
+      },
+      "crop": {
+        "face": {
+          "x": 265.69622802734375,
+          "y": 94.97412109375,
+          "w": 273.83538818359375,
+          "h": 356.647216796875
+        },
+        "sourceWidth": 809,
+        "sourceHeight": 857,
+        "score": 238
+      }
+    }
+  ]
+}

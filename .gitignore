@@ -1,0 +1,33 @@
+node_modules/
+.next/
+.expo/
+dist/
+web-build/
+*.log
+*.log.err
+npm-debug.*
+yarn-error.*
+
+# native build output
+/ios
+/android
+
+# env - never commit real values
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# cloudflared quick-tunnel URL (changes every restart)
+.tunnel-url.txt
+.ws-tunnel-url.txt
+tools/cloudflared.exe
+
+# local tooling
+.logs/
+
+# generated celebrity source downloads, model and QA sheets
+backend/.cache/

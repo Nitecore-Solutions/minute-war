@@ -1,0 +1,19 @@
+{
+  "name": "minute-war",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MINUTE WAR - India's 60-second challenge. Expo app + Next.js API/admin + MySQL.",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File tools/start-all.ps1",
+    "tunnels": "powershell -ExecutionPolicy Bypass -File tools/start-tunnels.ps1",
+    "db:migrate": "node backend/scripts/migrate.mjs",
+    "db:seed": "node backend/scripts/seed.mjs",
+    "db:admin": "node backend/scripts/create-admin.mjs",
+    "db:reset": "node backend/scripts/migrate.mjs --reset",
+    "db:query": "node backend/scripts/db-query.mjs",
+    "images:celeb": "npm --prefix backend run images:celeb",
+    "test": "npm --prefix backend run test",
+    "test:schema": "node backend/scripts/verify-schema.mjs",
+    "test:encoding": "node backend/scripts/check-encoding.mjs"
+  }
+}
