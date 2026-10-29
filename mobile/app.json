@@ -25,7 +25,12 @@
         "monochromeImage": "./assets/monochrome-icon.png",
         "backgroundColor": "#0f0a2e"
       },
-      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE", "VIBRATE", "com.google.android.gms.permission.AD_ID"]
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "VIBRATE",
+        "com.google.android.gms.permission.AD_ID"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -41,6 +46,12 @@
           "delayAppMeasurementInit": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "69645a72-b7ce-42f3-ba16-1c5dfa209a69"
+      }
+    },
+    "owner": "nitecore-solutionss-team"
   }
 }
