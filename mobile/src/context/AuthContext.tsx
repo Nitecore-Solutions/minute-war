@@ -37,6 +37,8 @@ interface AuthContextValue {
     referralCode?: string;
   }) => Promise<{ ok: boolean; error?: string }>;
   logout: () => Promise<void>;
+  /** Permanently closes the account, then clears the local session. */
+  deleteAccount: (password: string) => Promise<{ ok: boolean; error?: string }>;
   refresh: () => Promise<void>;
   /** Applies a balance the server just returned, avoiding a round trip. */
   applyBalance: (balance: number) => void;
@@ -163,19 +165,45 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     [refresh]
   );
 
+  /** Clears every local trace of the session without calling the API. */
+  const clearSession = useCallback(async () => {
+    setToken(null);
+    setUser(null);
+    setWallet(null);
+    setStreak(EMPTY_STREAK);
+    setBadges([]);
+    await AsyncStorage.removeItem(STORAGE_KEY).catch(() => {
+      // A storage failure must not leave the in-memory session alive.
+    });
+  }, []);
+
   const logout = useCallback(async () => {
     try {
       await Api.logout();
     } catch {
       // Signing out locally is enough.
     }
-    setToken(null);
-    setUser(null);
-    setWallet(null);
-    setStreak(EMPTY_STREAK);
-    setBadges([]);
-    await AsyncStorage.removeItem(STORAGE_KEY);
-  }, []);
+    await clearSession();
+  }, [clearSession]);
+
+  const deleteAccount = useCallback<AuthContextValue["deleteAccount"]>(
+    async (password) => {
+      const res = await Api.deleteAccount(password);
+
+      if (!res.data?.deleted) {
+        await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error).catch(() => {});
+        return {
+          ok: false,
+          error: res.error ?? "Could not delete your account. Please try again.",
+        };
+      }
+
+      await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+      await clearSession();
+      return { ok: true };
+    },
+    [clearSession]
+  );
 
   const value = useMemo<AuthContextValue>(
     () => ({
@@ -189,11 +217,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       login,
       signup,
       logout,
+      deleteAccount,
       refresh,
       applyBalance,
       applyWallet,
     }),
-    [user, wallet, streak, badges, isBooting, isSubmitting, error, login, signup, logout, refresh, applyBalance, applyWallet]
+    [user, wallet, streak, badges, isBooting, isSubmitting, error, login, signup, logout, deleteAccount, refresh, applyBalance, applyWallet]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

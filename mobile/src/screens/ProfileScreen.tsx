@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import {
   Alert,
+  Linking,
   Pressable,
   RefreshControl,
   ScrollView,
@@ -10,15 +11,21 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from "@react-navigation/native";
+import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import { Api, ChallengeSummary } from "../services/api";
+import { Api, ChallengeSummary, webUrl } from "../services/api";
 import { useAuth } from "../context/AuthContext";
 import { useRealtime } from "../context/RealtimeContext";
 import { BATTLES_ENABLED } from "../config/features";
 import { brand, radii } from "../constants/theme";
+import type { RootStackParamList } from "../navigation/RootNavigator";
+
+type Nav = NativeStackNavigationProp<RootStackParamList>;
 
 export function ProfileScreen() {
   const insets = useSafeAreaInsets();
+  const navigation = useNavigation<Nav>();
   const { user, wallet, streak, badges, logout, refresh } = useAuth();
   const { online, connected } = useRealtime();
 
@@ -47,6 +54,17 @@ export function ProfileScreen() {
       { text: "Cancel", style: "cancel" },
       { text: "Sign out", style: "destructive", onPress: () => void logout() },
     ]);
+  };
+
+  /**
+   * Legal pages live on the same Render origin as the API, so the user does
+   * not need a separate website URL baked into the app.
+   */
+  const openLegal = (path: string) => {
+    const url = webUrl(path);
+    void Linking.openURL(url).catch(() => {
+      Alert.alert("Could not open link", url);
+    });
   };
 
   const pending = challenges.filter((c) => c.status === "pending").length;
@@ -165,6 +183,44 @@ export function ProfileScreen() {
             ) : null}
           </Section>
         ) : null}
+
+        <Section title="Account & legal">
+          <View style={styles.legalList}>
+            <Pressable
+              onPress={() => navigation.navigate("DeleteAccount")}
+              style={({ pressed }) => [styles.legalRow, pressed && styles.pressed]}
+              accessibilityRole="button"
+            >
+              <View style={styles.legalCopy}>
+                <Text style={[styles.legalLabel, styles.legalDanger]}>
+                  Delete account
+                </Text>
+                <Text style={styles.legalHint}>
+                  Permanently remove your profile and data
+                </Text>
+              </View>
+              <Text style={styles.chevron}>›</Text>
+            </Pressable>
+
+            <Pressable
+              onPress={() => openLegal("/privacy")}
+              style={({ pressed }) => [styles.legalRow, pressed && styles.pressed]}
+              accessibilityRole="link"
+            >
+              <Text style={styles.legalLabel}>Privacy Policy</Text>
+              <Text style={styles.chevron}>›</Text>
+            </Pressable>
+
+            <Pressable
+              onPress={() => openLegal("/terms")}
+              style={({ pressed }) => [styles.legalRow, pressed && styles.pressed]}
+              accessibilityRole="link"
+            >
+              <Text style={styles.legalLabel}>Terms of Use</Text>
+              <Text style={styles.chevron}>›</Text>
+            </Pressable>
+          </View>
+        </Section>
 
         <View style={styles.footer}>
           {BATTLES_ENABLED ? (
@@ -309,6 +365,24 @@ const styles = StyleSheet.create({
   pillText: { fontSize: 10, fontWeight: "900" },
   pendingNote: { color: brand.warning, fontSize: 11, marginTop: 8 },
   empty: { color: brand.muted, fontSize: 12, lineHeight: 1.6 },
+  legalList: { gap: 6 },
+  legalRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 12,
+    backgroundColor: brand.surface,
+    borderRadius: radii.md,
+    borderWidth: 1,
+    borderColor: brand.border,
+    paddingHorizontal: 13,
+    paddingVertical: 12,
+  },
+  legalCopy: { flex: 1 },
+  legalLabel: { color: brand.white, fontSize: 13, fontWeight: "800" },
+  legalDanger: { color: brand.danger },
+  legalHint: { color: brand.muted, fontSize: 11, marginTop: 2 },
+  chevron: { color: brand.muted, fontSize: 20, fontWeight: "300" },
   footer: { marginTop: 26, alignItems: "center", gap: 12 },
   onlineRow: { flexDirection: "row", alignItems: "center", gap: 6 },
   dot: { width: 7, height: 7, borderRadius: 4 },

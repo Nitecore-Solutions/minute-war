@@ -12,6 +12,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { randomUUID } from "node:crypto";
 import mysql from "mysql2/promise";
+import { connectionOptions } from "./lib/db-connection.mjs";
 import bcrypt from "bcryptjs";
 
 const backendRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -52,7 +53,7 @@ if (role !== "admin" && role !== "player") {
 }
 
 async function main() {
-  const conn = await mysql.createConnection({ uri: process.env.DATABASE_URL });
+  const conn = await mysql.createConnection(connectionOptions(process.env.DATABASE_URL));
 
   try {
     const [existing] = await conn.query(

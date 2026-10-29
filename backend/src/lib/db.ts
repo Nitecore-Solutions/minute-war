@@ -24,6 +24,57 @@ export type SqlParams = SqlValue[];
 
 const globalForDb = globalThis as unknown as { __minuteWarPool?: Pool };
 
+/**
+ * Managed MySQL providers (Aiven included) put `ssl-mode=REQUIRED` in the
+ * service URI. mysql2 does not understand that query parameter, so it must be
+ * turned into an explicit `ssl` option or the connection is sent in clear text
+ * and rejected. The CA is optional: set DB_SSL_CA or DB_SSL_CA_BASE64 when the
+ * provider uses a private CA that Node does not already trust.
+ */
+function sslOptions(url: string) {
+  let required = process.env.DB_SSL === "true";
+
+  try {
+    const parsed = new URL(url);
+    for (const key of [...parsed.searchParams.keys()]) {
+      if (key.toLowerCase() !== "ssl-mode") continue;
+      const mode = parsed.searchParams.get(key)?.toUpperCase();
+      if (mode === "REQUIRED" || mode === "VERIFY_CA" || mode === "VERIFY_IDENTITY") {
+        required = true;
+      }
+    }
+  } catch {
+    // Let mysql2 produce its normal error for a malformed URL.
+  }
+
+  if (!required) return undefined;
+
+  const base64 = process.env.DB_SSL_CA_BASE64?.trim();
+  const ca =
+    process.env.DB_SSL_CA?.replace(/\\n/g, "\n") ??
+    (base64 ? Buffer.from(base64, "base64").toString("utf8") : undefined);
+
+  return {
+    // Encryption without verification is still vulnerable to a MITM. Keep
+    // verification on unless an operator explicitly opts out for a test box.
+    rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED !== "false",
+    ...(ca ? { ca } : {}),
+  };
+}
+
+/** Removes mysql2-unknown URI parameters before passing the URI through. */
+function cleanDatabaseUrl(url: string): string {
+  try {
+    const parsed = new URL(url);
+    for (const key of [...parsed.searchParams.keys()]) {
+      if (key.toLowerCase() === "ssl-mode") parsed.searchParams.delete(key);
+    }
+    return parsed.toString();
+  } catch {
+    return url;
+  }
+}
+
 function createPool(): Pool {
   const url = process.env.DATABASE_URL;
 
@@ -33,8 +84,11 @@ function createPool(): Pool {
     );
   }
 
+  const ssl = sslOptions(url);
+
   return mysql.createPool({
-    uri: url,
+    uri: cleanDatabaseUrl(url),
+    ...(ssl ? { ssl } : {}),
     waitForConnections: true,
     // Short queue rather than a long backlog: when the DB is slow we would
     // rather return an error than pile up requests that will time out anyway.

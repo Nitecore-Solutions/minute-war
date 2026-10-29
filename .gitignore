@@ -16,6 +16,13 @@ yarn-error.*
 .env
 .env.local
 .env.*.local
+.env.production
+
+# Play Store / EAS signing secrets
+google-play-service-account.json
+mobile/google-play-service-account.json
+*.jks
+*.keystore
 
 # OS
 .DS_Store

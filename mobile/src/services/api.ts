@@ -174,6 +174,17 @@ export function assetUrl(path: string | null | undefined): string | null {
   return `${root}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
+/**
+ * Public website URL on the same host as the API.
+ *
+ * The Render service serves /privacy, /terms and /delete-account next to /api,
+ * so the app never needs a second base URL just to open a legal page.
+ */
+export function webUrl(path = "/"): string {
+  const root = BASE.replace(/\/api$/, "");
+  return `${root}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export type SubmitResult = {
   runId: number;
   totalScore: number;
@@ -272,6 +283,17 @@ export const Api = {
     }>("/auth/me"),
 
   logout: () => request<{ signedOut: boolean }>("/auth/logout", { method: "POST" }),
+
+  /**
+   * Closes the signed-in account. The password is required again so a stolen
+   * session alone cannot destroy the account. The server scrubs PII, freezes
+   * the wallet and revokes every session before returning.
+   */
+  deleteAccount: (password: string) =>
+    post<{ deleted: boolean }>("/account/delete", {
+      password,
+      confirmation: "DELETE",
+    }),
 
   daily: () => request<DailyRun>("/game/daily"),
 

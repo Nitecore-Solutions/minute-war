@@ -13,6 +13,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import mysql from "mysql2/promise";
+import { connectionOptions } from "./lib/db-connection.mjs";
 
 const backendRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 for (const file of [".env.local", ".env"]) {
@@ -126,7 +127,7 @@ check(
 
 console.log("\n== kill switch ==");
 
-const conn = await mysql.createConnection({ uri: process.env.DATABASE_URL });
+const conn = await mysql.createConnection(connectionOptions(process.env.DATABASE_URL));
 
 // Capture and restore whatever the current state is.
 const [before] = await conn.query(

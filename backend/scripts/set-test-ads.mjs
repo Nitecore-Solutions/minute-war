@@ -20,6 +20,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import mysql from "mysql2/promise";
+import { connectionOptions } from "./lib/db-connection.mjs";
 
 const backendRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 for (const file of [".env.local", ".env"]) {
@@ -39,7 +40,7 @@ const TEST_INTERSTITIAL = "ca-app-pub-3940256099942544/1033173712";
 const INTERSTITIALS = new Set(["interstitial_result"]);
 
 const turnOff = process.argv.includes("--off");
-const conn = await mysql.createConnection({ uri: process.env.DATABASE_URL });
+const conn = await mysql.createConnection(connectionOptions(process.env.DATABASE_URL));
 
 try {
   if (turnOff) {

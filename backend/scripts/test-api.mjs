@@ -235,9 +235,10 @@ check(
   created.data?.shareUrl
 );
 
+const secondEmail = `e2e_b_${Date.now()}@minutewar.test`;
 const second = await call("/auth/signup", {
   method: "POST",
-  body: { name: "Challenger", email: `e2e_b_${Date.now()}@minutewar.test`, password },
+  body: { name: "Challenger", email: secondEmail, password },
 });
 const challengerToken = second.data?.token;
 
@@ -276,6 +277,49 @@ check(
     return t.length === 0 || t[0].balanceAfter === wallet.data?.balance;
   })(),
   `balance=${wallet.data?.balance} newest=${wallet.data?.transactions?.[0]?.balanceAfter}`
+);
+
+console.log("\n== account deletion ==");
+check(
+  "confirmation phrase is required",
+  (await call("/account/delete", {
+    method: "POST",
+    token: challengerToken,
+    body: { password, confirmation: "delete" },
+  })).status === 400
+);
+check(
+  "wrong password cannot delete",
+  (await call("/account/delete", {
+    method: "POST",
+    token: challengerToken,
+    body: { password: "wrong-password", confirmation: "DELETE" },
+  })).status === 401
+);
+
+const deleted = await call("/account/delete", {
+  method: "POST",
+  token: challengerToken,
+  body: { password, confirmation: "DELETE" },
+});
+check("signed-in user can delete", deleted.status === 200 && deleted.data?.deleted === true, deleted.error ?? "");
+check(
+  "deleted session is revoked",
+  (await call("/auth/me", { token: challengerToken })).status === 401
+);
+check(
+  "deleted account cannot log in",
+  (await call("/auth/login", { method: "POST", body: { email: secondEmail, password } })).status === 401
+);
+
+const webDeleted = await call("/account/delete", {
+  method: "POST",
+  body: { email, password, confirmation: "DELETE" },
+});
+check("public web deletion works with email + password", webDeleted.status === 200 && webDeleted.data?.deleted === true, webDeleted.error ?? "");
+check(
+  "web deletion revokes the main session",
+  (await call("/auth/me", { token })).status === 401
 );
 
 console.log("\n== access control ==");

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   KeyboardAvoidingView,
+  Linking,
   Platform,
   Pressable,
   ScrollView,
@@ -13,6 +14,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { useAuth } from "../context/AuthContext";
+import { webUrl } from "../services/api";
 import { brand, radii } from "../constants/theme";
 import type { RootStackParamList } from "../navigation/RootNavigator";
 
@@ -145,6 +147,26 @@ export default function SignupScreen({ navigation, route }: Props) {
               {isSubmitting ? "Creating..." : "CREATE ACCOUNT"}
             </Text>
           </Pressable>
+
+          <Text style={styles.legal}>
+            By creating an account you agree to the{" "}
+            <Text
+              style={styles.legalLink}
+              onPress={() => void Linking.openURL(webUrl("/terms"))}
+              accessibilityRole="link"
+            >
+              Terms of Use
+            </Text>{" "}
+            and{" "}
+            <Text
+              style={styles.legalLink}
+              onPress={() => void Linking.openURL(webUrl("/privacy"))}
+              accessibilityRole="link"
+            >
+              Privacy Policy
+            </Text>
+            .
+          </Text>
         </ScrollView>
       </KeyboardAvoidingView>
     </LinearGradient>
@@ -222,6 +244,14 @@ const styles = StyleSheet.create({
   buttonPressed: { opacity: 0.85 },
   buttonDisabled: { backgroundColor: brand.mutedDark },
   buttonText: { color: brand.white, fontSize: 16, fontWeight: "900", letterSpacing: 1 },
+  legal: {
+    color: brand.mutedDark,
+    fontSize: 11,
+    lineHeight: 1.6,
+    textAlign: "center",
+    marginTop: 14,
+  },
+  legalLink: { color: brand.gold, textDecorationLine: "underline" },
   error: {
     marginTop: 16,
     backgroundColor: "rgba(239,68,68,0.15)",

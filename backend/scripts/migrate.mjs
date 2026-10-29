@@ -13,6 +13,7 @@ import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import mysql from "mysql2/promise";
+import { connectionOptions } from "./lib/db-connection.mjs";
 import { splitStatements } from "./lib/split-sql.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -49,7 +50,9 @@ if (!files.length) {
 // not exist yet, and a connection that names a missing schema fails with
 // ER_BAD_DB_ERROR before we ever get a chance to create it.
 const db = databaseFromUrl(URL);
-const conn = await mysql.createConnection({ uri: stripDatabase(URL), multipleStatements: true });
+const conn = await mysql.createConnection(
+  connectionOptions(stripDatabase(URL), { multipleStatements: true })
+);
 
 try {
   await conn.query(

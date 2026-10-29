@@ -61,14 +61,18 @@ game-app/
 │   ├── scripts/              migrate, seed, create-admin, image build, test suites
 │   └── src/
 │       ├── app/
+│       │   ├── (public)/     Landing, privacy, terms, delete-account
 │       │   ├── admin/        Browser dashboard (12 pages, route-grouped)
-│       │   └── api/          Mobile REST API
+│       │   └── api/          Mobile REST API + account deletion
 │       ├── lib/              db pool, auth, wallet, games, settings
 │       ├── proxy.ts          Admin route guard
-│       └── ws-server/        Real-time battle server
+│       └── ws-server/        Real-time battle server (not deployed initially)
 ├── mobile/                   Expo app
+│   ├── assets/               Icon, adaptive/monochrome icon, splash
+│   ├── eas.json              Preview APK + production AAB profiles
+│   ├── scripts/              Reproducible icon/splash generator
 │   └── src/
-│       ├── screens/
+│       ├── screens/          Includes DeleteAccountScreen
 │       ├── games/            The six mini games + shared registry
 │       ├── context/          Auth + realtime
 │       └── services/api.ts
@@ -159,10 +163,10 @@ replayed answer for the same question is ignored, so points cannot be farmed.
 npm run db:migrate     # apply migrations
 npm run db:reset       # drop + reapply (dev only)
 npm run db:seed -- 30  # 30 demo players, password Demo12345
-npm run db:admin -- --email you@you.com
+npm run admin:create -- --email you@you.com
 npm run db:query -- "SELECT 1"
 
-npm test               # 52 schema + 58 API + 17 realtime + 25 admin + 20 ad
+npm test               # 52 schema + 65 API + 17 realtime + 25 admin + 20 ad
 npm run test:schema    # schema and stored procedures
 npm run test:encoding  # utf8mb4 round-trip
 ```
@@ -239,28 +243,144 @@ npm run ads:off     # disable every placement
 
 ---
 
-## Deploying
+## Production wiring (Android → Render → Aiven)
 
-The only environment-specific value is `DATABASE_URL`. Moving to managed MySQL
-(PlanetScale, Aiven, TiDB, RDS) is a one-line change:
+One Render service serves the whole backend. There is no separate admin deploy
+and no WebSocket service for the first release.
 
 ```
-DATABASE_URL=mysql://user:pass@host:3306/minute_war
+Android app (EAS AAB)
+   │  HTTPS + JSON, Authorization: Bearer <JWT>
+   ▼
+https://<service>.onrender.com
+   ├── /api/*        mobile REST API
+   ├── /admin        operator dashboard (httpOnly cookie)
+   ├── /privacy      public privacy policy
+   ├── /terms        public terms of use
+   └── /delete-account  public account-deletion form
+             │
+             ▼
+        Aiven MySQL (TLS)
 ```
 
-Nothing else references the host, and no stored procedures need `SUPER`, so the
-migration to a managed provider is a straight dump-and-load.
+The mobile app only learns **one** URL: `EXPO_PUBLIC_API_URL`, which must end in
+`/api`. `webUrl()` in `mobile/src/services/api.ts` strips that suffix to open
+`/privacy`, `/terms` and `/delete-account` on the same Render host. No second
+website URL or WebSocket URL is baked into the app. Secrets (`DATABASE_URL`,
+`JWT_SECRET`) exist only in Render's environment.
 
-Before going live:
+### 1. Aiven MySQL
 
-- [ ] Set a real `JWT_SECRET` (32+ random chars)
-- [ ] Change the admin password
-- [ ] Set `SHARE_BASE_URL` to your live domain — this is what turns a challenge
-      code into a link a friend can tap
-- [ ] `NODE_ENV=production` so the session cookie is `secure`
-- [ ] Re-run `node backend/scripts/migrate.mjs` against the cloud database
-- [ ] Review `backend/public/celebrities/celeb-closeup/ATTRIBUTION.md` and
-      confirm publicity rights for every celebrity likeness
+Create a free MySQL service and copy its **Service URI**. It will look like:
+
+```
+mysql://avnadmin:...@mysql-....aivencloud.com:PORT/defaultdb?ssl-mode=REQUIRED
+```
+
+The backend detects `ssl-mode=REQUIRED` and turns it into a mysql2 TLS
+connection. If Node cannot verify Aiven's private CA, download the CA and set
+`DB_SSL_CA_BASE64` (or `DB_SSL_CA` with `\n` escapes) in Render. Do not turn off
+verification just to get past a TLS error.
+
+### 2. Render web service
+
+Create a **Web Service** from `Nitecore-Solutions/minute-war`, root directory
+`backend`, runtime Node.
+
+| Setting | Value |
+|---|---|
+| Build command | `npm ci --include=dev && npm run build` |
+| Start command | `npx next start -p $PORT` |
+| Health check | `/api/health` |
+| Instance | Free for testing, Starter before launch |
+
+Add the values from `backend/.env.production.example` in the Render Environment
+tab. The important ones:
+
+```
+NODE_ENV=production
+DATABASE_URL=mysql://...
+DB_POOL_SIZE=5
+JWT_SECRET=<32+ random characters>
+JWT_TTL_DAYS=30
+APP_ORIGIN=https://<service>.onrender.com
+SHARE_BASE_URL=https://<service>.onrender.com
+```
+
+Render Free has no shell, so run migrations and create the admin from your
+machine with `DATABASE_URL` pointed at Aiven:
+
+```bash
+cd backend
+npm run db:migrate
+npm run admin:create -- --email owner@minutewar.in --password "use-a-long-password"
+```
+
+Never run `db:reset` or `db:seed` against production: both destroy or insert
+demo data. After the first deploy check `/api/health`, sign in at `/admin`, and
+open `/privacy`, `/terms` and `/delete-account`.
+
+### 3. EAS build and Play submission
+
+`mobile/eas.json` defines `preview` (internal APK) and `production` (AAB,
+auto-incrementing version code). Both force `EXPO_PUBLIC_ENABLE_BATTLES=false`.
+
+```bash
+cd mobile
+npx eas-cli init                 # link the Expo project once
+npx eas-cli env:create --name EXPO_PUBLIC_API_URL \
+  --value https://<service>.onrender.com/api \
+  --environment production --visibility plaintext
+
+npx eas-cli build --platform android --profile preview
+
+# after preview testing:
+npx eas-cli build --platform android --profile production
+npx eas-cli submit --platform android --profile production
+```
+
+The `production` profile loads EAS's `production` environment, so the API URL is
+not committed. For a local EAS build, copy `mobile/.env.production.example` to
+`mobile/.env.production` and fill it in instead. Rebuild after changing any
+`EXPO_PUBLIC_*` value; it is inlined into the binary.
+
+EAS submission expects a Play service-account JSON at
+`mobile/google-play-service-account.json`; that file is gitignored. Create the
+key in Google Cloud/Play Console and never commit it.
+
+### 4. Play Store release checklist
+
+- [ ] Public privacy URL and account-deletion URL (this service provides both)
+- [ ] In-app deletion path: Profile → Delete account
+- [ ] Production API URL in the EAS `production` environment; battles false
+- [ ] Real AdMob **app ID** in `mobile/app.json` (currently Google's test ID)
+      and real unit IDs in `/admin/sponsors`
+- [ ] App icon, adaptive icon, monochrome icon and splash (in `mobile/assets/`)
+- [ ] Target Android 16 / API 36
+- [ ] Data safety, ads, content rating and news declarations completed
+- [ ] Closed testing: 12 testers opted in for 14 continuous days (new personal
+      Play accounts)
+- [ ] Physical-device test on a clean install, including account deletion
+- [ ] Confirm celebrity image licences **and** publicity/personality rights
+- [ ] Change the admin password and set a production `JWT_SECRET`
+
+Render Free sleeps after 15 minutes and can take 30–60 seconds to wake. Upgrade
+the API service to Starter before the store release. If battles return later,
+deploy a **separate** Render Web Service for `src/ws-server/index.mjs`; Vercel
+and serverless functions cannot hold persistent WebSocket rooms.
+
+### 5. Account deletion
+
+Both paths call `POST /api/account/delete`, which verifies the current password
+and runs `sp_close_account`:
+
+- **App:** Profile → Delete account → password + `DELETE`
+- **Web:** `/delete-account` → email + password + `DELETE`
+
+The procedure revokes every session, scrubs name/email/city/state/referral
+code/password hash, freezes and zeroes the wallet, and keeps the coin ledger
+with the original account ID as the financial audit trail. The old email can be
+reused for a new account.
 
 ---
 

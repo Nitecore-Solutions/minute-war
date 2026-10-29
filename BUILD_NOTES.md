@@ -18,22 +18,26 @@
 - [x] `0003_celeb_closeup.sql` — media column, Celeb Close-Up game + image questions
 - [x] Backend lib: db pool, auth, http, ids, settings, wallet, games, seed, admin
 - [x] API: auth, game daily + questions + submit, challenges, leaderboard, wallet, admin stats
-- [x] WebSocket battle server — 17 tests passing
-- [x] Admin dashboard — 12 pages, production build clean (36 routes)
-- [x] Mobile app — 10 screens, 6 games, auth, realtime, share loop
+- [x] WebSocket battle server — 17 tests passing (not deployed for launch)
+- [x] Admin dashboard — 12 pages, production build clean
+- [x] Mobile app — 11 screens, 6 games, auth, realtime, share loop
+- [x] Account deletion — API, in-app screen, public /delete-account form
+- [x] Public site — landing, /privacy, /terms, /delete-account
+- [x] EAS preview/production profiles + Render/Aiven production env templates
+- [x] App icon, adaptive/monochrome icon, splash and reproducible generator
 - [x] Auto-downloaded celebrity crops + attribution (Wikimedia Commons, YuNet)
 - [x] AdMob — server-driven placements, admin control, Expo Go safe
 - [x] tools/ start scripts (start-all.ps1, start-tunnels.ps1) + LAN IP self-heal
 - [x] README.md, .env examples, seed data
 
-**All suites passing: 52 schema + 58 API + 17 realtime + 25 admin + 20 ad + 14 encoding.**
-Both TS projects compile clean. `next build` produces 37 routes.
+**All suites passing: 52 schema + 65 API + 17 realtime + 25 admin + 20 ad + 14 encoding.**
+Both TS projects compile clean. `next build` produces a clean production build.
 
 ## Test commands
 
 ```bash
 node scripts/verify-schema.mjs   # 52 DB/procedure assertions
-node scripts/test-api.mjs        # 58 API assertions (needs dev server)
+node scripts/test-api.mjs        # 65 API assertions (needs dev server)
 node scripts/test-ws.mjs         # 17 realtime assertions (needs ws server)
 ```
 
@@ -123,6 +127,19 @@ node scripts/test-ws.mjs         # 17 realtime assertions (needs ws server)
     through `getSettingsFresh()` rather than the cached helper. A kill switch
     that lags five seconds behind the cached read, or that only takes effect
     after an app restart, is not a kill switch.
+15. **mysql2 does not understand `?ssl-mode=REQUIRED`.** Passing Aiven's
+    Service URI straight through opens a non-TLS connection and the server
+    rejects it. `src/lib/db.ts` and `scripts/lib/db-connection.mjs` strip the
+    parameter and set an explicit `ssl` option; keep both in sync.
+16. **Account deletion is a soft close, not `DELETE FROM users`.** The wallet
+    ledger has `ON DELETE RESTRICT`. `sp_close_account` scrubs PII, freezes and
+    zeroes the wallet, and keeps the ledger keyed to the original user id. Both
+    the app and the public form call the same procedure; do not add a second
+    deletion path that bypasses it.
+17. **The public site and admin dashboard share one Next service but not one
+    layout.** `(public)` is the dark player-facing shell; `/admin` keeps the
+    light operations shell. Do not import admin CSS into a public page or the
+    store reviewer sees the dashboard chrome.
 
 ## Design decisions worth remembering
 

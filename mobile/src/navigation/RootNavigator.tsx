@@ -22,6 +22,7 @@ import BattleScreen from "../screens/BattleScreen";
 import { LeaderboardScreen } from "../screens/LeaderboardScreen";
 import { WalletScreen } from "../screens/WalletScreen";
 import { ProfileScreen } from "../screens/ProfileScreen";
+import DeleteAccountScreen from "../screens/DeleteAccountScreen";
 
 export type RootStackParamList = {
   Login: undefined;
@@ -43,6 +44,7 @@ export type RootStackParamList = {
   };
   Challenge: { code: string };
   Battle: { code: string };
+  DeleteAccount: undefined;
 };
 
 export type TabParamList = {
@@ -107,11 +109,18 @@ export default function RootNavigator() {
     if (isBooting) return;
     if (!navigationRef.isReady()) return;
 
-    const onAuthScreen = navigationRef.getCurrentRoute()?.name === "Login" ||
-      navigationRef.getCurrentRoute()?.name === "Signup";
+    const current = navigationRef.getCurrentRoute()?.name;
+    const onAuthScreen = current === "Login" || current === "Signup";
 
     if (user && onAuthScreen) {
       navigationRef.reset({ routes: [{ name: "Home" }] });
+      return;
+    }
+
+    // Signing out, deleting an account or losing a revoked session must not
+    // leave the user on a protected screen with an empty AuthContext.
+    if (!user && !onAuthScreen) {
+      navigationRef.reset({ routes: [{ name: "Login" }] });
     }
   }, [user, isBooting]);
 
@@ -140,6 +149,7 @@ export default function RootNavigator() {
         <Stack.Screen name="Signup" component={SignupScreen} />
         <Stack.Screen name="Home" component={Tabs} />
         <Stack.Screen name="DailyRun" component={DailyRunScreen} />
+        <Stack.Screen name="DeleteAccount" component={DeleteAccountScreen} />
         <Stack.Screen name="Game" component={GamePlayScreen} />
         <Stack.Screen
           name="Result"

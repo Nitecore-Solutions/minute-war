@@ -11,6 +11,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import mysql from "mysql2/promise";
+import { connectionOptions } from "./lib/db-connection.mjs";
 import bcrypt from "bcryptjs";
 
 const backendRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -25,7 +26,7 @@ for (const file of [".env.local", ".env"]) {
   }
 }
 
-const conn = await mysql.createConnection({ uri: process.env.DATABASE_URL });
+const conn = await mysql.createConnection(connectionOptions(process.env.DATABASE_URL));
 
 let pass = 0;
 let fail = 0;
