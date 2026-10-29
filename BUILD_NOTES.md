@@ -130,13 +130,21 @@ node scripts/test-ws.mjs         # 17 realtime assertions (needs ws server)
 15. **mysql2 does not understand `?ssl-mode=REQUIRED`.** Passing Aiven's
     Service URI straight through opens a non-TLS connection and the server
     rejects it. `src/lib/db.ts` and `scripts/lib/db-connection.mjs` strip the
-    parameter and set an explicit `ssl` option; keep both in sync.
-16. **Account deletion is a soft close, not `DELETE FROM users`.** The wallet
+    parameter and set an explicit `ssl` option; keep both in sync. When the
+    migrator connects before the schema exists, it removes only the database
+    path, not the query string, so `ssl-mode=REQUIRED` and the CA still apply.
+    Aiven's project CA is self-signed; set `DB_SSL_CA_BASE64` in production.
+16. **Aiven's `defaultdb` starts with `utf8mb4_0900_ai_ci`.** `CREATE DATABASE
+    IF NOT EXISTS` does not change an existing database, and stored procedure
+    parameters inherit the database collation. The migrator runs
+    `ALTER DATABASE ... utf8mb4_unicode_ci` before applying migrations; without
+    that, `sp_credit_wallet` fails with "Illegal mix of collations".
+17. **Account deletion is a soft close, not `DELETE FROM users`.** The wallet
     ledger has `ON DELETE RESTRICT`. `sp_close_account` scrubs PII, freezes and
     zeroes the wallet, and keeps the ledger keyed to the original user id. Both
     the app and the public form call the same procedure; do not add a second
     deletion path that bypasses it.
-17. **The public site and admin dashboard share one Next service but not one
+18. **The public site and admin dashboard share one Next service but not one
     layout.** `(public)` is the dark player-facing shell; `/admin` keeps the
     light operations shell. Do not import admin CSS into a public page or the
     store reviewer sees the dashboard chrome.

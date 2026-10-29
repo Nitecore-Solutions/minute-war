@@ -31,8 +31,8 @@ function loadEnv(file) {
   }
 }
 
-const URL = process.env.DATABASE_URL;
-if (!URL) {
+const databaseUrl = process.env.DATABASE_URL;
+if (!databaseUrl) {
   console.error("\nDATABASE_URL is not set. Copy .env.example to .env first.\n");
   process.exit(1);
 }
@@ -49,14 +49,22 @@ if (!files.length) {
 // Connect WITHOUT a default schema first. On a fresh machine the database may
 // not exist yet, and a connection that names a missing schema fails with
 // ER_BAD_DB_ERROR before we ever get a chance to create it.
-const db = databaseFromUrl(URL);
+const db = databaseFromUrl(databaseUrl);
 const conn = await mysql.createConnection(
-  connectionOptions(stripDatabase(URL), { multipleStatements: true })
+  connectionOptions(stripDatabase(databaseUrl), { multipleStatements: true })
 );
 
 try {
   await conn.query(
     `CREATE DATABASE IF NOT EXISTS \`${db}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`
+  );
+  // Managed providers often create their default database with the server
+  // collation (Aiven uses utf8mb4_0900_ai_ci). CREATE DATABASE IF NOT EXISTS
+  // will not change an existing database, and stored procedure parameters
+  // inherit the database collation, causing "Illegal mix of collations" when
+  // they compare against tables declared as utf8mb4_unicode_ci.
+  await conn.query(
+    `ALTER DATABASE \`${db}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`
   );
   await conn.query(`USE \`${db}\``);
   console.log(`\n  database \`${db}\``);
@@ -105,7 +113,15 @@ try {
     try {
       // One statement at a time: procedure bodies contain `;`, and DELIMITER
       // is a client-side directive the server would reject.
-      const statements = splitStatements(sql);
+      //
+      // The .sql files are also meant to be importable by hand, so 0001 starts
+      // with CREATE DATABASE/USE `minute_war`. The migrator has already chosen
+      // the database from DATABASE_URL (Aiven calls its default `defaultdb`),
+      // so those two directives must not override it.
+      const statements = splitStatements(sql).filter((statement) => {
+        const firstKeyword = stripLeadingComments(statement);
+        return !/^(?:CREATE\s+DATABASE|USE)\b/i.test(firstKeyword);
+      });
       for (const statement of statements) {
         await conn.query(statement);
       }
@@ -135,10 +151,9 @@ function databaseFromUrl(url) {
 
 /** Same URL with the schema removed, for connecting before it exists. */
 function stripDatabase(url) {
-  const scheme = url.slice(0, url.indexOf("://") + 3);
-  const rest = url.slice(url.indexOf("://") + 3);
-  const host = rest.slice(0, rest.indexOf("/"));
-  return `${scheme}${host}`;
+  const parsed = new URL(url);
+  parsed.pathname = "";
+  return parsed.toString();
 }
 
 async function ensureMigrationsTable(connection) {
@@ -151,4 +166,20 @@ async function ensureMigrationsTable(connection) {
       UNIQUE KEY uq_migrations_filename (filename)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
   `);
+}
+
+/** Drops leading `--` and block comments before looking for the first keyword. */
+function stripLeadingComments(text) {
+  let out = text.trimStart();
+  while (out.startsWith("--") || out.startsWith("/*")) {
+    if (out.startsWith("--")) {
+      const newline = out.indexOf("\n");
+      out = newline === -1 ? "" : out.slice(newline + 1).trimStart();
+      continue;
+    }
+
+    const end = out.indexOf("*/");
+    out = end === -1 ? "" : out.slice(end + 2).trimStart();
+  }
+  return out;
 }
