@@ -127,7 +127,7 @@ export default async function AdminSettings({
           <TextSetting
             name="app_name"
             label="App name"
-            value={String(s.app_name ?? "MINUTE WAR")}
+            value={String(s.app_name ?? "RushArena")}
           />
           <TextSetting
             name="tagline"
@@ -156,7 +156,7 @@ export default async function AdminSettings({
               {String(s.share_text ?? "")
                 .replace("{score}", "9,820")
                 .replace("{name}", "Nitish")
-                .replace("{link}", "minutewar.in/c/AB12CD")}
+                .replace("{link}", "minute-war.onrender.com/c/AB12CD")}
             </div>
           </div>
         </section>

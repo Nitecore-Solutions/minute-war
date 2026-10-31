@@ -127,7 +127,7 @@ export default function RootNavigator() {
   if (isBooting) {
     return (
       <View style={styles.splash}>
-        <Text style={styles.splashTitle}>MINUTE WAR</Text>
+        <Text style={styles.splashTitle}>RushArena</Text>
         <Text style={styles.splashTag}>60 Seconds. One Winner.</Text>
         <ActivityIndicator size="large" color={brand.accent} style={{ marginTop: 20 }} />
       </View>

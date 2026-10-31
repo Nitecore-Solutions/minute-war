@@ -16,11 +16,11 @@ const siteUrl = process.env.APP_ORIGIN ?? "https://minutewar.in";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "MINUTE WAR",
-    template: "%s · MINUTE WAR",
+    default: "RushArena",
+    template: "%s · RushArena",
   },
   description: "India's 60-second challenge game. Six mini games, one daily run.",
-  applicationName: "MINUTE WAR",
+  applicationName: "RushArena",
   robots: { index: true, follow: true },
 };
 

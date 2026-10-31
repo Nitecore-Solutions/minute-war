@@ -242,7 +242,7 @@ export function ProfileScreen() {
             <Text style={styles.signOutText}>Sign out</Text>
           </Pressable>
 
-          <Text style={styles.version}>MINUTE WAR · v1.0.0</Text>
+          <Text style={styles.version}>RushArena · v1.0.0</Text>
         </View>
       </ScrollView>
     </LinearGradient>

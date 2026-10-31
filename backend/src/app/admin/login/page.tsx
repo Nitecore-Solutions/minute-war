@@ -106,7 +106,7 @@ export default function AdminLoginPage() {
   return (
     <div className="login-wrap">
       <div className="login-card">
-        <h1 style={{ margin: "0 0 4px", fontSize: 22 }}>MINUTE WAR</h1>
+        <h1 style={{ margin: "0 0 4px", fontSize: 22 }}>RushArena</h1>
         <p style={{ margin: "0 0 22px", color: "#64748b", fontSize: 13 }}>
           Operations dashboard
         </p>

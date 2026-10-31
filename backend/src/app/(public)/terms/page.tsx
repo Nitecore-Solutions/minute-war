@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description:
-    "The rules for using MINUTE WAR, including accounts, virtual coins, fair play and account deletion.",
+    "The rules for using RushArena, including accounts, virtual coins, fair play and account deletion.",
 };
 
 export default function TermsOfUse() {
@@ -15,12 +15,12 @@ export default function TermsOfUse() {
       <p className="public-updated">Last updated: 29 October 2026</p>
 
       <p>
-        These terms are an agreement between you and MINUTE WAR. By downloading,
+        These terms are an agreement between you and RushArena. By downloading,
         installing or using the app, or by creating an account, you agree to
         them. If you do not agree, do not use the game.
       </p>
 
-      <h2>1. Who can use MINUTE WAR</h2>
+      <h2>1. Who can use RushArena</h2>
       <p>
         You must be at least 13 years old to create an account. If you are under
         18, you may use the game only with the permission of a parent or
@@ -55,7 +55,7 @@ export default function TermsOfUse() {
 
       <h2>3. The game is a skill game</h2>
       <p>
-        MINUTE WAR is a timed skill and trivia game. It is not a game of chance,
+        RushArena is a timed skill and trivia game. It is not a game of chance,
         gambling, betting or a lottery. There is no entry fee to play, no wager
         against another player, and no way to withdraw money from the game.
       </p>
@@ -123,7 +123,7 @@ export default function TermsOfUse() {
 
       <h2>7. Content and intellectual property</h2>
       <p>
-        The MINUTE WAR name, logo, app, code, game formats, text and original
+        The RushArena name, logo, app, code, game formats, text and original
         artwork belong to us or our licensors. You get a limited, non-exclusive,
         non-transferable, revocable licence to use the app for personal,
         non-commercial play. You may not use our branding without permission.
@@ -176,7 +176,7 @@ export default function TermsOfUse() {
 
       <h2>11. Limitation of liability</h2>
       <p>
-        To the extent permitted by law, MINUTE WAR is not liable for indirect,
+        To the extent permitted by law, RushArena is not liable for indirect,
         incidental, special, consequential or punitive losses, or for lost
         profits, data, goodwill or virtual coins, arising from your use of or
         inability to use the game. Our total liability for a claim relating to

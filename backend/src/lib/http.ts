@@ -80,7 +80,7 @@ export function mapDbError(err: unknown): NextResponse {
     return fail("You already took this challenge", 409, "challenge_answered");
   }
   if (message.includes("maintenance_mode")) {
-    return fail("MINUTE WAR is briefly down for maintenance", 503, "maintenance");
+    return fail("RushArena is briefly down for maintenance", 503, "maintenance");
   }
   if (message.includes("registrations_closed")) {
     return fail("Sign-ups are closed right now", 503, "registrations_closed");

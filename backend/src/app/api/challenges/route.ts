@@ -104,7 +104,7 @@ export async function POST(req: Request) {
     const shareUrl = `${shareBase.replace(/\/+$/, "")}/challenge/${code}`;
     const template = String(
       await getSetting("share_text") ??
-        "🔥 I scored {score} in MINUTE WAR! Can you beat me? {link}"
+        "🔥 I scored {score} in RushArena! Can you beat me? {link}"
     );
 
     // Fill the placeholders the admin can edit from /admin/settings.

@@ -39,7 +39,7 @@ export default function LoginScreen({ navigation }: Props) {
         ]}
         keyboardShouldPersistTaps="handled"
       >
-        <Text style={styles.logo}>MINUTE WAR</Text>
+        <Text style={styles.logo}>RushArena</Text>
         <Text style={styles.tag}>60 Seconds. One Winner.</Text>
 
         <View style={styles.card}>

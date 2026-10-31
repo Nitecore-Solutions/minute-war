@@ -11,11 +11,11 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
   return (
     <div className="public-root">
       <header className="public-header">
-        <Link href="/" className="public-brand" aria-label="MINUTE WAR home">
+        <Link href="/" className="public-brand" aria-label="RushArena home">
           <span className="public-logo" aria-hidden="true">
             60
           </span>
-          MINUTE WAR
+          RushArena
         </Link>
 
         <nav className="public-nav" aria-label="Public site">
@@ -30,7 +30,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
       <main className="public-main">{children}</main>
 
       <footer className="public-footer">
-        <span>© {new Date().getFullYear()} MINUTE WAR. Made in India.</span>
+        <span>© {new Date().getFullYear()} RushArena. Made in India.</span>
         <nav aria-label="Legal">
           <Link href="/privacy">Privacy policy</Link>
           <Link href="/terms">Terms of use</Link>

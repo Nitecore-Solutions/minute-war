@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How MINUTE WAR collects, uses, stores and deletes personal data, including how to close your account.",
+    "How RushArena collects, uses, stores and deletes personal data, including how to close your account.",
 };
 
 export default function PrivacyPolicy() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
       <p className="public-updated">Last updated: 29 October 2026</p>
 
       <p>
-        MINUTE WAR is a 60-second skill game operated from India. This policy
+        RushArena is a 60-second skill game operated from India. This policy
         explains what we collect, why we collect it, who we share it with, and
         how you can get it deleted. It applies to the Android app, the public
         website and the player account behind both.
@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
 
       <h2>1. Who is responsible</h2>
       <p>
-        MINUTE WAR is the data controller for the information described here.
+        RushArena is the data controller for the information described here.
         For privacy questions, contact{" "}
         <a href="mailto:support@minutewar.in">support@minutewar.in</a>. Our
         Grievance Officer can be reached at the same address.
@@ -254,7 +254,7 @@ export default function PrivacyPolicy() {
 
       <h2>11. Children and teenagers</h2>
       <p>
-        MINUTE WAR is not directed to children under 13. You must be at least 13
+        RushArena is not directed to children under 13. You must be at least 13
         to create an account. If you are under 18, use the game with the
         permission of a parent or guardian. If we learn that a child under 13 has
         given us personal data, we will delete it. Contact us if you believe that

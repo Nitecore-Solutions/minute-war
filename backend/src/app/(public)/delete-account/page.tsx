@@ -5,7 +5,7 @@ import DeleteAccountForm from "./DeleteAccountForm";
 export const metadata: Metadata = {
   title: "Delete Account",
   description:
-    "Permanently close your MINUTE WAR account from the app or from this web page.",
+    "Permanently close your RushArena account from the app or from this web page.",
 };
 
 export default function DeleteAccountPage() {
@@ -16,7 +16,7 @@ export default function DeleteAccountPage() {
       <p className="public-updated">Last updated: 29 October 2026</p>
 
       <p>
-        You can close your MINUTE WAR account permanently. This removes your
+        You can close your RushArena account permanently. This removes your
         name, email address, city, state, referral code and password, freezes your
         wallet, and signs you out everywhere. Deletion cannot be undone.
       </p>

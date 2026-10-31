@@ -89,7 +89,7 @@ export default function DeleteAccountScreen({ navigation }: Props) {
 
           <Text style={styles.title}>Delete account</Text>
           <Text style={styles.lead}>
-            This permanently closes your MINUTE WAR account. It cannot be undone.
+            This permanently closes your RushArena account. It cannot be undone.
           </Text>
 
           <View style={styles.warning}>

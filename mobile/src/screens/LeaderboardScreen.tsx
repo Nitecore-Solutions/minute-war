@@ -88,7 +88,7 @@ export function LeaderboardScreen() {
         <Text style={styles.sub}>
           {scope === "daily" && connected
             ? "Live · updates as people finish"
-            : "Top players in MINUTE WAR"}
+            : "Top players in RushArena"}
         </Text>
 
         <View style={styles.tabs}>

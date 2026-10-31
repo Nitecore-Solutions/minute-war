@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "MINUTE WAR",
+    "name": "RushArena",
     "slug": "minute-war",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
     "icon": "./assets/icon.png",
-    "scheme": "minutewar",
+    "scheme": "rusharena",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -14,11 +14,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "in.minutewar.app",
+      "bundleIdentifier": "in.rusharena.app",
       "buildNumber": "1"
     },
     "android": {
-      "package": "in.minutewar.app",
+      "package": "in.rusharena.app",
       "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",

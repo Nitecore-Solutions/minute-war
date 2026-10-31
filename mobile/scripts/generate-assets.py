@@ -1,5 +1,5 @@
 """
-Generate the MINUTE WAR app icon, Android adaptive foreground, monochrome
+Generate the RushArena app icon, Android adaptive foreground, monochrome
 icon and splash screen.
 
 Run from mobile/:
@@ -204,7 +204,7 @@ def make_splash() -> Image.Image:
     title_font = font(FONT_BOLD, 94)
     draw.text(
         (width // 2, 1780),
-        "MINUTE WAR",
+        "RushArena",
         font=title_font,
         fill=(*WHITE, 255),
         anchor="mm",
@@ -216,15 +216,6 @@ def make_splash() -> Image.Image:
         "60 SECONDS. ONE WINNER.",
         font=tag_font,
         fill=(*GOLD, 255),
-        anchor="mm",
-    )
-
-    url_font = font(FONT_SEMI, 24)
-    draw.text(
-        (width // 2, 2580),
-        "minutewar.in",
-        font=url_font,
-        fill=(*MUTED, 255),
         anchor="mm",
     )
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "MINUTE WAR is India's 60-second challenge game: six quick mini games, a daily run, streaks and a leaderboard.",
+    "RushArena is India's 60-second challenge game: six quick mini games, a daily run, streaks and a leaderboard.",
 };
 
 export default function PublicHome() {

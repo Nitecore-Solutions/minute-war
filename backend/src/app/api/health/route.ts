@@ -29,7 +29,7 @@ export async function GET() {
     data: {
       status: dbOk ? "ok" : "degraded",
       database: dbOk ? "up" : "down",
-      appName: settings.app_name ?? "MINUTE WAR",
+      appName: settings.app_name ?? "RushArena",
       maintenance: settings.maintenance === true,
       time: new Date().toISOString(),
     },

@@ -103,7 +103,7 @@ export default function HomeScreen() {
           </View>
 
           <View style={styles.brandWrap}>
-            <Text style={styles.brand} numberOfLines={1}>MINUTE WAR</Text>
+            <Text style={styles.brand} numberOfLines={1}>RushArena</Text>
             <View style={styles.statusLine}>
               <View
                 style={[

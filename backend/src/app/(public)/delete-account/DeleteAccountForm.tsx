@@ -79,7 +79,7 @@ export default function DeleteAccountForm() {
     <form className="public-form-card" onSubmit={submit}>
       <h2>Delete with your account password</h2>
       <p>
-        Use the same email and password you use to sign in to MINUTE WAR. The
+        Use the same email and password you use to sign in to RushArena. The
         password is checked before anything is changed.
       </p>
 

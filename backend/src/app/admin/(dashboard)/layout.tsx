@@ -63,7 +63,7 @@ export default async function AdminLayout({
     <div className="shell">
       <aside className="sidebar">
         <div className="sidebar-brand">
-          MINUTE WAR
+          RushArena
           <small>Operations</small>
         </div>
 

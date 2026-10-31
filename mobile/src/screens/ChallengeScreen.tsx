@@ -79,13 +79,13 @@ export default function ChallengeScreen({ route, navigation }: Props) {
         <View style={[styles.center, { paddingTop: insets.top }]}>
           <Text style={styles.errorEmoji}>⚔️</Text>
           <Text style={styles.errorText}>
-            Challenges are not available in this version of MINUTE WAR.
+            Challenges are not available in this version of RushArena.
           </Text>
           <Pressable
             onPress={() => navigation.navigate("Home")}
             style={({ pressed }) => [styles.primary, pressed && styles.pressed]}
           >
-            <Text style={styles.primaryText}>GO TO MINUTE WAR</Text>
+            <Text style={styles.primaryText}>GO HOME</Text>
           </Pressable>
         </View>
       </LinearGradient>
@@ -112,7 +112,7 @@ export default function ChallengeScreen({ route, navigation }: Props) {
             onPress={() => navigation.navigate("Home")}
             style={({ pressed }) => [styles.primary, pressed && styles.pressed]}
           >
-            <Text style={styles.primaryText}>GO TO MINUTE WAR</Text>
+            <Text style={styles.primaryText}>GO HOME</Text>
           </Pressable>
         </View>
       </LinearGradient>

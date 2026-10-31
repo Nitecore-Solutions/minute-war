@@ -1,5 +1,5 @@
 -- ===========================================================================
--- MINUTE WAR - INITIAL SCHEMA (MySQL 8.0)
+-- RushArena - INITIAL SCHEMA (MySQL 8.0)
 --
 --   mysql -u root -p < db/migrations/0001_init.sql
 -- or: node scripts/migrate.mjs
@@ -973,14 +973,14 @@ ON DUPLICATE KEY UPDATE placement = VALUES(placement);
 -- JSON literals are cast directly. Wrapping in to_jsonb-style helpers breaks
 -- MySQL's type inference on an untyped string.
 INSERT INTO `settings` (`key`, `value`) VALUES
-  ('app_name',          JSON_QUOTE('MINUTE WAR')),
+  ('app_name',          JSON_QUOTE('RushArena')),
   ('tagline',           JSON_QUOTE('60 Seconds. One Challenge. Can You Beat Me?')),
   ('daily_game_count',  '3'),
   ('coin_signup_bonus', '500'),
   ('coin_daily_login',  '50'),
   ('coin_invite',       '200'),
   ('premium_price_inr', '79'),
-  ('share_text',        JSON_QUOTE('🔥 I scored {score} in MINUTE WAR! Can you beat me? {link}')),
+  ('share_text',        JSON_QUOTE('🔥 I scored {score} in RushArena! Can you beat me? {link}')),
   ('maintenance',       'false'),
   ('registrations_open','true'),
   ('ads_enabled',       'true')
